@@ -15,7 +15,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-emerald-100/80 mb-6 max-w-sm font-light">
-              0% Glutine, 100% Gusto. Non scegliamo solo prodotti da vendere, scegliamo il gusto che vorremmo sulla nostra tavola.
+              0% Glutine, 100% Gusto. A Casalfiumanese, a soli 10 minuti da Imola.
             </p>
             <div className="text-xs text-emerald-100/60 mb-6 font-light space-y-1">
               <p className="font-medium text-emerald-50">L'Arcobaleno Senza Glutine di Compagnone Miriam</p>
@@ -59,8 +59,8 @@ export function Footer() {
         <div className="border-t border-emerald-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-emerald-200/60 font-light">
           <p>&copy; {new Date().getFullYear()} Arcobaleno Senza Glutine. Tutti i diritti riservati.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Cookie Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

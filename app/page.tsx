@@ -83,8 +83,8 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
             >
-              0% Glutine,<br />
-              <span className="text-amber-400">100% Gusto.</span>
+              Senza Glutine, <br />
+              <span className="text-amber-400">Senza Rinunce.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, scale: 0.95 }}
@@ -92,7 +92,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-2xl text-emerald-50 mb-10 max-w-2xl mx-auto font-light"
             >
-              Non scegliamo solo prodotti da vendere, scegliamo il gusto che vorremmo sulla nostra tavola.
+              A Casalfiumanese, a soli 10 minuti da Imola. Non scegliamo solo prodotti da vendere, scegliamo il gusto che vorremmo sulla nostra tavola.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -168,7 +168,7 @@ export default function Home() {
             >
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Ti ascoltiamo davvero</h2>
               <p className="text-xl text-gray-600 font-light">
-                Per noi, il senza glutine non è una rinuncia, ma una scoperta. Soprattutto se sei neodiagnosticato, siamo qui per guidarti verso un mondo di sapori sorprendenti, senza stress dal punto di vista di qualcuno che l'ha già vissuta.
+                Per noi, il senza glutine non è una rinuncia, ma una scoperta. Soprattuale se sei neodiagnosticato a Imola o dintorni, siamo qui per guidarti verso un mondo di sapori sorprendenti, senza stress dal punto di vista di qualcuno che l'ha già vissuta.
               </p>
             </motion.div>
 
@@ -535,7 +535,7 @@ export default function Home() {
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
               <div className="lg:w-1/2">
                 <span className="text-emerald-600 font-semibold tracking-wider text-sm uppercase mb-4 block">Contatti & Orari</span>
-                <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-8">Vieni a trovarci</h2>
+                <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-8">Vieni a trovarci nel nostro negozio vicino a Imola</h2>
 
                 <div className="space-y-8">
                   <div className="flex items-start gap-4">
@@ -544,7 +544,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-bold text-lg mb-1">Indirizzo</h4>
-                      <p className="text-gray-600 font-light">Via Montanara 13/g,<br />40020 Casalfiumanese (BO)</p>
+                      <p className="text-gray-600 font-light">Via Montanara 13/g,<br />40020 Casalfiumanese (BO)</p><p>A 10 minuti da Imola </p>
                     </div>
                   </div>
 
