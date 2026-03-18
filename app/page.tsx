@@ -595,6 +595,49 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Ricette CTA Section */}
+        <section className="py-20 md:py-28 bg-emerald-900 text-white relative overflow-hidden">
+          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&auto=format&fit=crop')] bg-cover bg-center opacity-15"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-900 via-emerald-900/95 to-emerald-900/80"></div>
+          <div className="container mx-auto px-4 md:px-6 relative z-10">
+            <motion.div
+              {...fadeIn}
+              className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10"
+            >
+              <div className="md:w-3/5">
+                <span className="text-amber-400 font-semibold tracking-wider text-sm uppercase mb-4 block">🍽️ Le Nostre Ricette</span>
+                <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4">
+                  Senza Glutine, <br />con tutto il gusto.
+                </h2>
+                <p className="text-emerald-100/80 font-light leading-relaxed text-lg mb-8">
+                  Scopri oltre 30 ricette testate e approvate: antipasti, primi piatti, secondi, contorni, dolci e tanto altro. Piatti semplici, genuini e buonissimi pensati per chi vive senza glutine.
+                </p>
+                <a
+                  href="/ricette"
+                  className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-emerald-900 font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg"
+                >
+                  Esplora le Ricette
+                  <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
+              <div className="md:w-2/5 grid grid-cols-2 gap-3">
+                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square">
+                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&auto=format&fit=crop" alt="Torta al cioccolato" className="w-full h-full object-cover" />
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square translate-y-4">
+                  <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=300&auto=format&fit=crop" alt="Pasta al pesto" className="w-full h-full object-cover" />
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square -translate-y-4">
+                  <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=300&auto=format&fit=crop" alt="Bruschette" className="w-full h-full object-cover" />
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square">
+                  <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=300&auto=format&fit=crop" alt="Salmone" className="w-full h-full object-cover" />
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* 5. Newsletter / Lead Magnet */}
         <div id="newsletter" />
         <section className="relative md:sticky top-0 z-90 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">

@@ -1,14 +1,19 @@
 import React from 'react';
 
 export const LocalBusinessSchema = () => {
+  const baseUrl = 'https://www.arcobalenosenzaglutine.it';
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Arcobaleno Senza Glutine",
-    "image": "https://images.unsplash.com/photo-1555507036-ab1f40ce88f4?q=80&w=2626&auto=format&fit=crop",
-    "@id": "http://localhost:3000/#localbusiness",
-    "url": "http://localhost:3000",
+    "image": `${baseUrl}/img/locale.jpeg`,
+    "@id": `${baseUrl}/#localbusiness`,
+    "url": baseUrl,
     "telephone": "+393884043388",
+    "priceRange": "€€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Contanti, Carte di credito, Tessera sanitaria celiaci",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Via Montanara 13/g",
@@ -22,6 +27,27 @@ export const LocalBusinessSchema = () => {
       "latitude": 44.30,
       "longitude": 11.60
     },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Imola",
+        "sameAs": "https://it.wikipedia.org/wiki/Imola"
+      },
+      {
+        "@type": "City",
+        "name": "Casalfiumanese",
+        "sameAs": "https://it.wikipedia.org/wiki/Casalfiumanese"
+      },
+      {
+        "@type": "City",
+        "name": "Bologna",
+        "sameAs": "https://it.wikipedia.org/wiki/Bologna"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/arcobalenosenzaglutine/",
+      "https://www.facebook.com/arcobalenosenzaglutine/"
+    ],
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -48,7 +74,7 @@ export const LocalBusinessSchema = () => {
         "closes": "19:30"
       }
     ],
-    "description": "Il miglior negozio di prodotti senza glutine a Casalfiumanese vicino a Imola. Ampia scelta di prodotti e consulenza esperta per celiaci."
+    "description": "Il miglior negozio di prodotti senza glutine a Casalfiumanese, a soli 10 minuti da Imola. Ampia scelta di prodotti senza glutine, pane fresco, dolci artigianali e consulenza esperta per celiaci e neodiagnosticati."
   };
 
   return (

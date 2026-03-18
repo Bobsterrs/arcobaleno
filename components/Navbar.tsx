@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, Instagram, Facebook, ArrowRight } from "lucide-react"
 import { Button } from "./ui/Button"
@@ -16,6 +17,9 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
+  const isHomePage = pathname === "/"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,16 +29,36 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const scrollToSection = (e: React.MouseEvent | React.TouchEvent, id: string) => {
+  const navigateToSection = (e: React.MouseEvent | React.TouchEvent, id: string) => {
     e.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop,
-        behavior: 'smooth'
-      });
+    if (isHomePage) {
+      // On homepage: smooth scroll to the section
+      const element = document.getElementById(id);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      // On other pages: navigate to homepage with hash
+      router.push(`/#${id}`);
     }
   };
+
+  const navItems = [
+    { label: "Chi Siamo", id: "chi-siamo" },
+    { label: "Il Metodo", id: "esperienza" },
+    { label: "Perché Noi", id: "perche-noi" },
+    { label: "Dicono di Noi", id: "recensioni" },
+    { label: "Prodotti", id: "novita" },
+    { label: "Ricette", id: "ricette", isPage: true },
+    { label: "Calcola Buono", id: "calcolatore" },
+    { label: "Dove Trovarci", id: "dove-siamo" }
+  ];
+
+  const linkClass = "px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center"
+  const mobileLinkClass = "w-full text-foreground text-lg py-4 border-b border-gray-50 text-center font-medium hover:text-emerald-600 hover:bg-emerald-50/50 transition-all flex justify-center items-center rounded-2xl"
 
   return (
     <motion.header
@@ -58,27 +82,17 @@ export function Navbar() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden lg:flex items-center justify-center space-x-2 flex-1 px-2">
-          <a href="#chi-siamo" onClick={(e) => scrollToSection(e, 'chi-siamo')} className="px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center">
-            Chi Siamo
-          </a>
-          <a href="#esperienza" onClick={(e) => scrollToSection(e, 'esperienza')} className="px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center">
-            Il Metodo
-          </a>
-          <a href="#perche-noi" onClick={(e) => scrollToSection(e, 'perche-noi')} className="px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center">
-            Perché Noi
-          </a>
-          <a href="#recensioni" onClick={(e) => scrollToSection(e, 'recensioni')} className="px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center">
-            Dicono di Noi
-          </a>
-          <a href="#novita" onClick={(e) => scrollToSection(e, 'novita')} className="px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center">
-            Prodotti
-          </a>
-          <a href="#calcolatore" onClick={(e) => scrollToSection(e, 'calcolatore')} className="px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center">
-            Calcola Buono
-          </a>
-          <a href="#dove-siamo" onClick={(e) => scrollToSection(e, 'dove-siamo')} className="px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center">
-            Dove Trovarci
-          </a>
+          {navItems.map((item) => (
+            item.isPage ? (
+              <Link key={item.id} href={`/${item.id}`} className={linkClass}>
+                {item.label}
+              </Link>
+            ) : (
+              <a key={item.id} href={`/#${item.id}`} onClick={(e) => navigateToSection(e, item.id)} className={linkClass}>
+                {item.label}
+              </a>
+            )
+          ))}
         </nav>
 
         {/* Right Actions: Social Pills & CTA */}
@@ -98,7 +112,7 @@ export function Navbar() {
           <Button 
             variant="secondary" 
             className="rounded-full shadow-md" 
-            onClick={(e) => scrollToSection(e, 'newsletter')}
+            onClick={(e) => navigateToSection(e, 'newsletter')}
           >
             Iscriviti
           </Button>
@@ -123,26 +137,29 @@ export function Navbar() {
             className="lg:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-xl rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 max-h-[80vh] flex flex-col"
           >
             <div className="overflow-y-auto py-6 px-8 space-y-2 scrollbar-hide">
-              {[
-                { label: "Chi Siamo", id: "chi-siamo" },
-                { label: "Il Metodo", id: "esperienza" },
-                { label: "Perché Noi", id: "perche-noi" },
-                { label: "Dicono di Noi", id: "recensioni" },
-                { label: "Prodotti", id: "novita" },
-                { label: "Calcola Buono", id: "calcolatore" },
-                { label: "Dove Trovarci", id: "dove-siamo" }
-              ].map((item) => (
-                <a 
-                  key={item.id}
-                  href={`#${item.id}`}
-                  onClick={(e) => {
-                    setIsMobileMenuOpen(false);
-                    scrollToSection(e, item.id);
-                  }}
-                  className="w-full text-foreground text-lg py-4 border-b border-gray-50 text-center font-medium hover:text-emerald-600 hover:bg-emerald-50/50 transition-all flex justify-center items-center rounded-2xl"
-                >
-                  {item.label}
-                </a>
+              {navItems.map((item) => (
+                item.isPage ? (
+                  <Link
+                    key={item.id}
+                    href={`/${item.id}`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={mobileLinkClass}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a 
+                    key={item.id}
+                    href={`/#${item.id}`}
+                    onClick={(e) => {
+                      setIsMobileMenuOpen(false);
+                      navigateToSection(e, item.id);
+                    }}
+                    className={mobileLinkClass}
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
               
               <div className="pt-6">
@@ -160,7 +177,7 @@ export function Navbar() {
 
                 <Button variant="secondary" className="w-full py-7 rounded-2xl shadow-lg text-lg" onClick={(e) => {
                   setIsMobileMenuOpen(false);
-                  scrollToSection(e, 'newsletter');
+                  navigateToSection(e, 'newsletter');
                 }}>
                   Iscriviti alla Newsletter
                 </Button>
