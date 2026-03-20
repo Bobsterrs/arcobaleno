@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
             <h1 className="font-serif text-4xl md:text-5xl font-bold mb-8">Privacy Policy</h1>
             <div className="prose prose-emerald lg:prose-lg max-w-none text-gray-600 font-light leading-relaxed space-y-6">
               <section>
-                <h2 className="text-2xl font-bold text-foreground">Informativa sulla Privacy</h2>
+                <h2 className="text-2xl font-bold text-foreground">Informativa Estesa sulla Privacy</h2>
                 <p>
                   Benvenuto su Arcobaleno Senza Glutine. La tua privacy è importante per noi. Questa informativa spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali quando visiti il nostro sito e interagisci con noi.
                 </p>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { ProductSchema } from './ProductSchema';
 
 export const SectionSchemas = () => {
   const baseUrl = 'https://www.arcobalenosenzaglutine.it';
@@ -125,6 +125,7 @@ export const SectionSchemas = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
       />
+      <ProductSchema />
     </>
   );
 };

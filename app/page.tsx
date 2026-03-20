@@ -83,8 +83,8 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
             >
-              Senza Glutine, <br />
-              <span className="text-amber-400">Senza Rinunce.</span>
+              Prodotti Senza Glutine, <br />
+              <span className="text-amber-400">Qualità Senza Compromessi.</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, scale: 0.95 }}
@@ -119,10 +119,11 @@ export default function Home() {
                 className="md:w-1/2"
               >
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden relative shadow-2xl">
-                  <img
+                  <Image
                     src="/img/chi-siamo-v2.jpg"
-                    alt="I fondatori di Arcobaleno"
-                    className="w-full h-full object-cover"
+                    alt="I fondatori di Arcobaleno Senza Glutine: passione per i prodotti certificati"
+                    fill
+                    className="object-cover"
                   />
                   <div className="absolute inset-0 bg-emerald-900/10 mix-blend-overlay"></div>
                 </div>
@@ -136,7 +137,7 @@ export default function Home() {
                 className="md:w-1/2 flex flex-col justify-center"
               >
                 <span className="text-emerald-600 font-semibold tracking-wider text-sm uppercase mb-4">La Nostra Storia</span>
-                <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Piacere di conoscerti.</h2>
+                <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Negozio per Celiaci a Casalfiumanese</h2>
                 <div className="space-y-6 text-lg text-gray-600 font-light leading-relaxed">
                   <p>
                     Dietro Arcobaleno ci siamo noi, che viviamo la celiachia non come un limite, ma come un'opportunità per <strong>alzare l'asticella della qualità</strong>.
@@ -166,9 +167,9 @@ export default function Home() {
               {...fadeIn}
               className="text-center max-w-3xl mx-auto mb-16"
             >
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Ti ascoltiamo davvero</h2>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Prodotti Senza Glutine Freschi e Selezionati</h2>
               <p className="text-xl text-gray-600 font-light">
-                Per noi, il senza glutine non è una rinuncia, ma una scoperta. Soprattuale se sei neodiagnosticato a Imola o dintorni, siamo qui per guidarti verso un mondo di sapori sorprendenti, senza stress dal punto di vista di qualcuno che l'ha già vissuta.
+                Per noi, il senza glutine non è una rinuncia, ma una scoperta. Soprattutto se sei neodiagnosticato a Imola o dintorni, siamo qui per guidarti verso un mondo di sapori sorprendenti, senza stress dal punto di vista di qualcuno che l'ha già vissuta.
               </p>
             </motion.div>
 
@@ -395,11 +396,12 @@ export default function Home() {
               >
                 {/* Double the logos for seamless loop */}
                 {[...brands, ...brands].map((brand, i) => (
-                  <div key={i} className="flex-shrink-0 w-40 md:w-56 h-28 flex items-center justify-center p-4">
-                    <img
+                  <div key={i} className="flex-shrink-0 w-40 md:w-56 h-28 flex items-center justify-center p-4 relative">
+                    <Image
                       src={brand.logo}
-                      alt={brand.name}
-                      className="max-w-full max-h-full object-contain mix-blend-multiply opacity-80 hover:opacity-100 transition-opacity duration-300 contrast-[1.05]"
+                      alt={`Logo brand partner: ${brand.name}`}
+                      fill
+                      className="object-contain mix-blend-multiply opacity-80 hover:opacity-100 transition-opacity duration-300 contrast-[1.05] p-4"
                     />
                   </div>
                 ))}
@@ -410,7 +412,7 @@ export default function Home() {
               {[
                 { src: '/img/croissant.jpeg', alt: 'Croissant Artigianale Senza Glutine' },
                 { src: '/img/rosetta.jpeg', alt: 'Rosetta Fresca Senza Glutine' },
-                { src: '/img/torta.jpeg', alt: 'Torta di Compleanno Personalizzata' }
+                { src: '/img/torta.jpeg', alt: 'Torta di Compleanno Personalizzata Senza Glutine' }
               ].map((item, i) => (
                 <motion.div
                   key={i}
@@ -420,10 +422,11 @@ export default function Home() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden bg-gray-200 shadow-xl transition-all duration-500"
                 >
-                  <img
+                  <Image
                     src={item.src}
                     alt={item.alt}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </motion.div>
               ))}
@@ -450,7 +453,7 @@ export default function Home() {
             <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/2">
                 <span className="text-amber-600 font-semibold tracking-wider text-sm uppercase mb-4 block">Strumenti Utili</span>
-                <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Quanto vale il tuo buono?</h2>
+                <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">Quanto vale il tuo buono celiachia?</h2>
                 <p className="text-lg text-gray-600 font-light mb-8 leading-relaxed">
                   In Emilia Romagna, il valore del buono mensile per prodotti senza glutine varia in base al genere e alla fascia d'età. Seleziona i tuoi dati per scoprire l'importo esatto caricato sulla tua tessera sanitaria.
                 </p>
@@ -621,17 +624,17 @@ export default function Home() {
                 </a>
               </div>
               <div className="md:w-2/5 grid grid-cols-2 gap-3">
-                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square">
-                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&auto=format&fit=crop" alt="Torta al cioccolato" className="w-full h-full object-cover" />
+                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square relative">
+                  <Image src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&auto=format&fit=crop" alt="Torta al cioccolato senza glutine artigianale" fill className="object-cover" />
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square translate-y-4">
-                  <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=300&auto=format&fit=crop" alt="Pasta al pesto" className="w-full h-full object-cover" />
+                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square translate-y-4 relative">
+                  <Image src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=300&auto=format&fit=crop" alt="Pasta al pesto senza glutine fresca" fill className="object-cover" />
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square -translate-y-4">
-                  <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=300&auto=format&fit=crop" alt="Bruschette" className="w-full h-full object-cover" />
+                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square -translate-y-4 relative">
+                  <Image src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=300&auto=format&fit=crop" alt="Bruschette senza glutine sfiziose" fill className="object-cover" />
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square">
-                  <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=300&auto=format&fit=crop" alt="Salmone" className="w-full h-full object-cover" />
+                <div className="rounded-2xl overflow-hidden shadow-lg aspect-square relative">
+                  <Image src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=300&auto=format&fit=crop" alt="Salmone con verdure per celiaci" fill className="object-cover" />
                 </div>
               </div>
             </motion.div>

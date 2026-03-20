@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Clock, ChefHat, Users, X, ArrowRight, ArrowLeft, Send, UtensilsCrossed } from "lucide-react"
 import { Button } from "@/components/ui/Button"
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useEffect } from "react"
 
 interface Recipe {
@@ -19,6 +20,8 @@ interface Recipe {
   difficulty: string
   prepTime: string
   servings: number
+  author: string
+  longDescription: string
 }
 
 const categories = ["Tutti", "Antipasti", "Primi Piatti", "Secondi", "Contorni", "Dolci", "Altro"]
@@ -103,8 +106,8 @@ export default function RicettePage() {
                 Le Nostre Ricette
               </span>
               <h1 className="font-serif text-4xl md:text-6xl font-bold mb-6">
-                Senza Glutine, <br />
-                <span className="text-amber-400">con Tutto il Gusto.</span>
+                Ricette Senza Glutine <br />
+                <span className="text-amber-400">Semplici e Gustose.</span>
               </h1>
               <p className="text-lg md:text-xl text-emerald-100/90 font-light max-w-2xl mx-auto">
                 Scopri le nostre ricette testate e approvate. Piatti semplici, genuini e soprattutto buonissimi, pensati per chi vive senza glutine senza rinunciare al piacere della tavola.
@@ -114,26 +117,24 @@ export default function RicettePage() {
         </section>
 
         {/* Category Filters */}
-        <section className="sticky top-24 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="flex overflow-x-auto py-4 gap-2 md:gap-3 scrollbar-hide md:justify-center">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${
-                    activeCategory === cat
-                      ? "bg-emerald-600 text-white shadow-md shadow-emerald-200 scale-105"
-                      : "bg-gray-100 text-gray-600 hover:bg-emerald-50 hover:text-emerald-600"
-                  }`}
-                >
-                  <span className="text-base">{categoryIcons[cat]}</span>
-                  {cat}
-                </button>
-              ))}
-            </div>
+        <div className="sticky top-28 z-40 flex justify-center px-4 w-full pointer-events-none -mt-8 mb-10">
+          <div className="pointer-events-auto flex overflow-x-auto p-2 gap-1.5 scrollbar-hide bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl shadow-emerald-900/5 rounded-full max-w-full">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 ${
+                  activeCategory === cat
+                    ? "bg-emerald-600 text-white shadow-md shadow-emerald-200 scale-[1.02]"
+                    : "bg-transparent text-gray-600 hover:bg-emerald-50 hover:text-emerald-700"
+                }`}
+              >
+                <span className="text-base">{categoryIcons[cat]}</span>
+                {cat}
+              </button>
+            ))}
           </div>
-        </section>
+        </div>
 
         {/* Recipe Grid */}
         <section className="py-16 md:py-20 bg-gray-50">
@@ -177,10 +178,11 @@ export default function RicettePage() {
                       className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer border border-gray-100 hover:border-emerald-100"
                     >
                       <div className="relative h-56 overflow-hidden">
-                        <img
+                        <Image
                           src={recipe.image}
-                          alt={recipe.title}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          alt={`Ricetta Senza Glutine: ${recipe.title}`}
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         <span className={`absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-semibold ${getDifficultyColor(recipe.difficulty)}`}>
@@ -253,10 +255,11 @@ export default function RicettePage() {
                 </button>
 
                 <div className="relative h-64 md:h-80">
-                  <img
+                  <Image
                     src={selectedRecipe.image}
-                    alt={selectedRecipe.title}
-                    className="w-full h-full object-cover"
+                    alt={`Dettaglio Ricetta: ${selectedRecipe.title}`}
+                    fill
+                    className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
@@ -266,6 +269,10 @@ export default function RicettePage() {
                     <h2 className="font-serif text-3xl md:text-4xl font-bold text-white">
                       {selectedRecipe.title}
                     </h2>
+                    <div className="mt-2 text-emerald-50 font-medium flex items-center gap-2 opacity-90">
+                      <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-[10px]">&hearts;</span>
+                      di {selectedRecipe.author}
+                    </div>
                   </div>
                 </div>
 
@@ -285,8 +292,8 @@ export default function RicettePage() {
                     </div>
                   </div>
 
-                  <p className="text-gray-600 font-light leading-relaxed mb-8">
-                    {selectedRecipe.description}
+                  <p className="text-gray-600 font-light leading-relaxed mb-8 whitespace-pre-line">
+                    {selectedRecipe.longDescription || selectedRecipe.description}
                   </p>
 
                   <div className="grid md:grid-cols-2 gap-8">
@@ -322,6 +329,33 @@ export default function RicettePage() {
                       </ol>
                     </div>
                   </div>
+                  
+                  {/* SEO Structured Data for Recipe */}
+                  <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                      __html: JSON.stringify({
+                        "@context": "https://schema.org/",
+                        "@type": "Recipe",
+                        "name": selectedRecipe.title,
+                        "image": [
+                          selectedRecipe.image
+                        ],
+                        "author": {
+                          "@type": "Person",
+                          "name": selectedRecipe.author
+                        },
+                        "description": selectedRecipe.description,
+                        "recipeYield": `${selectedRecipe.servings} servings`,
+                        "prepTime": `PT${selectedRecipe.prepTime.replace(/[^0-9]/g, '')}M`,
+                        "recipeIngredient": selectedRecipe.ingredients,
+                        "recipeInstructions": selectedRecipe.steps.map(step => ({
+                          "@type": "HowToStep",
+                          "text": step
+                        }))
+                      })
+                    }}
+                  />
                 </div>
               </motion.div>
             </motion.div>

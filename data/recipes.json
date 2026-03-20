@@ -5,12 +5,27 @@
     "category": "Antipasti",
     "description": "Croccanti fette di pane senza glutine tostate, condite con pomodorini freschi, basilico profumato e un filo d'olio extra vergine d'oliva.",
     "image": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=600&auto=format&fit=crop",
-    "ingredients": ["Pane senza glutine", "Pomodorini ciliegino 300g", "Basilico fresco", "Olio EVO", "Aglio", "Sale", "Pepe"],
-    "steps": ["Tostare le fette di pane senza glutine in forno a 180°C per 5 minuti.", "Tagliare i pomodorini a metà e condirli con olio, sale e basilico.", "Strofinare l'aglio sulle fette tostate.", "Distribuire i pomodorini sulle bruschette e servire."],
+    "ingredients": [
+      "Pane senza glutine",
+      "Pomodorini ciliegino 300g",
+      "Basilico fresco",
+      "Olio EVO",
+      "Aglio",
+      "Sale",
+      "Pepe"
+    ],
+    "steps": [
+      "Tostare le fette di pane senza glutine in forno a 180°C per 5 minuti.",
+      "Tagliare i pomodorini a metà e condirli con olio, sale e basilico.",
+      "Strofinare l'aglio sulle fette tostate.",
+      "Distribuire i pomodorini sulle bruschette e servire."
+    ],
     "difficulty": "Facile",
     "prepTime": "15 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Gloria Senza Glutine",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Bruschette con Pomodorini e Basilico\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare pane senza glutine, pomodorini ciliegino 300g, basilico fresco. \n\nCome primo passo fondamentale, dovrete tostare le fette di pane senza glutine in forno a 180°C per 5 minuti. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: tagliare i pomodorini a metà e condirli con olio, sale e basilico. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di strofinare l'aglio sulle fette tostate. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, distribuire i pomodorini sulle bruschette e servire. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "antipasto-02",
@@ -18,12 +33,29 @@
     "category": "Antipasti",
     "description": "Cremoso hummus di ceci naturalmente senza glutine, servito con bastoncini di carote, sedano e peperoni colorati.",
     "image": "https://images.unsplash.com/photo-1577805947697-89340a10b3e3?w=600&auto=format&fit=crop",
-    "ingredients": ["Ceci cotti 400g", "Tahina 2 cucchiai", "Succo di limone", "Aglio 1 spicchio", "Olio EVO", "Paprika dolce", "Carote", "Sedano", "Peperoni"],
-    "steps": ["Frullare i ceci con tahina, limone, aglio e un filo d'olio fino ad ottenere una crema liscia.", "Aggiustare di sale e aggiungere acqua se necessario.", "Servire in una ciotola con paprika e olio a filo.", "Accompagnare con verdure crude tagliate a bastoncini."],
+    "ingredients": [
+      "Ceci cotti 400g",
+      "Tahina 2 cucchiai",
+      "Succo di limone",
+      "Aglio 1 spicchio",
+      "Olio EVO",
+      "Paprika dolce",
+      "Carote",
+      "Sedano",
+      "Peperoni"
+    ],
+    "steps": [
+      "Frullare i ceci con tahina, limone, aglio e un filo d'olio fino ad ottenere una crema liscia.",
+      "Aggiustare di sale e aggiungere acqua se necessario.",
+      "Servire in una ciotola con paprika e olio a filo.",
+      "Accompagnare con verdure crude tagliate a bastoncini."
+    ],
     "difficulty": "Facile",
     "prepTime": "10 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Roberto F.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Hummus di Ceci con Verdure Crude\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare ceci cotti 400g, tahina 2 cucchiai, succo di limone. \n\nCome primo passo fondamentale, dovrete frullare i ceci con tahina, limone, aglio e un filo d'olio fino ad ottenere una crema liscia. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: aggiustare di sale e aggiungere acqua se necessario. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di servire in una ciotola con paprika e olio a filo. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, accompagnare con verdure crude tagliate a bastoncini. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "antipasto-03",
@@ -31,12 +63,27 @@
     "category": "Antipasti",
     "description": "Delicati involtini di zucchine grigliate ripieni di ricotta fresca, menta e scorza di limone.",
     "image": "https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=600&auto=format&fit=crop",
-    "ingredients": ["Zucchine 3 grandi", "Ricotta 250g", "Menta fresca", "Scorza di limone", "Olio EVO", "Sale", "Pepe"],
-    "steps": ["Tagliare le zucchine a fette lunghe e sottili.", "Grigliare le fette su una piastra calda 2 minuti per lato.", "Mescolare la ricotta con menta tritata, scorza di limone, sale e pepe.", "Farcire ogni fetta con un cucchiaio di ripieno e arrotolare."],
+    "ingredients": [
+      "Zucchine 3 grandi",
+      "Ricotta 250g",
+      "Menta fresca",
+      "Scorza di limone",
+      "Olio EVO",
+      "Sale",
+      "Pepe"
+    ],
+    "steps": [
+      "Tagliare le zucchine a fette lunghe e sottili.",
+      "Grigliare le fette su una piastra calda 2 minuti per lato.",
+      "Mescolare la ricotta con menta tritata, scorza di limone, sale e pepe.",
+      "Farcire ogni fetta con un cucchiaio di ripieno e arrotolare."
+    ],
     "difficulty": "Facile",
     "prepTime": "25 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Gloria Senza Glutine",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Involtini di Zucchine Grigliate e Ricotta\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare zucchine 3 grandi, ricotta 250g, menta fresca. \n\nCome primo passo fondamentale, dovrete tagliare le zucchine a fette lunghe e sottili. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: grigliare le fette su una piastra calda 2 minuti per lato. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di mescolare la ricotta con menta tritata, scorza di limone, sale e pepe. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, farcire ogni fetta con un cucchiaio di ripieno e arrotolare. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "antipasto-04",
@@ -44,12 +91,27 @@
     "category": "Antipasti",
     "description": "Bastoncini di polenta dorati al forno, croccanti fuori e morbidi dentro, con salsa di pomodoro piccante.",
     "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=600&auto=format&fit=crop",
-    "ingredients": ["Polenta precotta 500g", "Olio EVO", "Rosmarino", "Sale grosso", "Parmigiano grattugiato", "Passata di pomodoro", "Peperoncino"],
-    "steps": ["Tagliare la polenta a bastoncini regolari.", "Condire con olio, rosmarino e parmigiano.", "Disporre su teglia con carta forno e cuocere a 200°C per 25 minuti.", "Servire con salsa di pomodoro piccante."],
+    "ingredients": [
+      "Polenta precotta 500g",
+      "Olio EVO",
+      "Rosmarino",
+      "Sale grosso",
+      "Parmigiano grattugiato",
+      "Passata di pomodoro",
+      "Peperoncino"
+    ],
+    "steps": [
+      "Tagliare la polenta a bastoncini regolari.",
+      "Condire con olio, rosmarino e parmigiano.",
+      "Disporre su teglia con carta forno e cuocere a 200°C per 25 minuti.",
+      "Servire con salsa di pomodoro piccante."
+    ],
     "difficulty": "Facile",
     "prepTime": "35 min",
     "servings": 6,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Elena G.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Chips di Polenta Croccanti\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare polenta precotta 500g, olio evo, rosmarino. \n\nCome primo passo fondamentale, dovrete tagliare la polenta a bastoncini regolari. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: condire con olio, rosmarino e parmigiano. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di disporre su teglia con carta forno e cuocere a 200°C per 25 minuti. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, servire con salsa di pomodoro piccante. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "antipasto-05",
@@ -57,12 +119,27 @@
     "category": "Antipasti",
     "description": "Fresca tartare di salmone norvegese con avocado maturo, sesamo e salsa di soia tamari senza glutine.",
     "image": "https://images.unsplash.com/photo-1534482421-64566f976cfa?w=600&auto=format&fit=crop",
-    "ingredients": ["Salmone fresco 300g", "Avocado 1", "Salsa tamari (senza glutine)", "Sesamo", "Zenzero fresco", "Lime", "Erba cipollina"],
-    "steps": ["Tagliare il salmone a cubetti piccoli e condire con tamari e zenzero grattugiato.", "Tagliare l'avocado a cubetti della stessa dimensione.", "Comporre la tartare alternando salmone e avocado con un coppapasta.", "Completare con sesamo, erba cipollina e succo di lime."],
+    "ingredients": [
+      "Salmone fresco 300g",
+      "Avocado 1",
+      "Salsa tamari (senza glutine)",
+      "Sesamo",
+      "Zenzero fresco",
+      "Lime",
+      "Erba cipollina"
+    ],
+    "steps": [
+      "Tagliare il salmone a cubetti piccoli e condire con tamari e zenzero grattugiato.",
+      "Tagliare l'avocado a cubetti della stessa dimensione.",
+      "Comporre la tartare alternando salmone e avocado con un coppapasta.",
+      "Completare con sesamo, erba cipollina e succo di lime."
+    ],
     "difficulty": "Media",
     "prepTime": "20 min",
     "servings": 2,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Marco V.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Tartare di Salmone con Avocado\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare salmone fresco 300g, avocado 1, salsa tamari (senza glutine). \n\nCome primo passo fondamentale, dovrete tagliare il salmone a cubetti piccoli e condire con tamari e zenzero grattugiato. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: tagliare l'avocado a cubetti della stessa dimensione. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di comporre la tartare alternando salmone e avocado con un coppapasta. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, completare con sesamo, erba cipollina e succo di lime. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "primo-01",
@@ -70,12 +147,27 @@
     "category": "Primi Piatti",
     "description": "Fusilli senza glutine conditi con pesto fresco fatto in casa: basilico DOP, pinoli, parmigiano e olio ligure.",
     "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&auto=format&fit=crop",
-    "ingredients": ["Fusilli senza glutine 320g", "Basilico fresco 80g", "Pinoli 30g", "Parmigiano Reggiano 50g", "Pecorino 20g", "Aglio 1 spicchio", "Olio EVO 100ml"],
-    "steps": ["Frullare basilico, pinoli, aglio e formaggi con olio fino a ottenere una crema.", "Cuocere la pasta in abbondante acqua salata.", "Scolare la pasta al dente tenendo da parte un mestolo di acqua di cottura.", "Mantecare la pasta col pesto, aggiungendo acqua di cottura per la cremosità."],
+    "ingredients": [
+      "Fusilli senza glutine 320g",
+      "Basilico fresco 80g",
+      "Pinoli 30g",
+      "Parmigiano Reggiano 50g",
+      "Pecorino 20g",
+      "Aglio 1 spicchio",
+      "Olio EVO 100ml"
+    ],
+    "steps": [
+      "Frullare basilico, pinoli, aglio e formaggi con olio fino a ottenere una crema.",
+      "Cuocere la pasta in abbondante acqua salata.",
+      "Scolare la pasta al dente tenendo da parte un mestolo di acqua di cottura.",
+      "Mantecare la pasta col pesto, aggiungendo acqua di cottura per la cremosità."
+    ],
     "difficulty": "Facile",
     "prepTime": "20 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Chiara N.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Pasta al Pesto di Basilico Genovese\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare fusilli senza glutine 320g, basilico fresco 80g, pinoli 30g. \n\nCome primo passo fondamentale, dovrete frullare basilico, pinoli, aglio e formaggi con olio fino a ottenere una crema. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: cuocere la pasta in abbondante acqua salata. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di scolare la pasta al dente tenendo da parte un mestolo di acqua di cottura. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, mantecare la pasta col pesto, aggiungendo acqua di cottura per la cremosità. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "primo-02",
@@ -83,12 +175,28 @@
     "category": "Primi Piatti",
     "description": "Risotto cremoso con zucca butternut caramellata, rosmarino fresco e una spolverata di parmigiano.",
     "image": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&auto=format&fit=crop",
-    "ingredients": ["Riso Carnaroli 320g", "Zucca butternut 400g", "Cipolla 1", "Brodo vegetale 1L", "Parmigiano 60g", "Burro 30g", "Rosmarino", "Vino bianco"],
-    "steps": ["Cuocere la zucca a cubetti in forno a 180°C per 20 minuti.", "Soffriggere la cipolla e tostare il riso, sfumare con vino bianco.", "Aggiungere il brodo poco alla volta mescolando per 18 minuti.", "Unire la zucca, mantecare con burro e parmigiano, decorare con rosmarino."],
+    "ingredients": [
+      "Riso Carnaroli 320g",
+      "Zucca butternut 400g",
+      "Cipolla 1",
+      "Brodo vegetale 1L",
+      "Parmigiano 60g",
+      "Burro 30g",
+      "Rosmarino",
+      "Vino bianco"
+    ],
+    "steps": [
+      "Cuocere la zucca a cubetti in forno a 180°C per 20 minuti.",
+      "Soffriggere la cipolla e tostare il riso, sfumare con vino bianco.",
+      "Aggiungere il brodo poco alla volta mescolando per 18 minuti.",
+      "Unire la zucca, mantecare con burro e parmigiano, decorare con rosmarino."
+    ],
     "difficulty": "Media",
     "prepTime": "45 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Gloria Senza Glutine",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Risotto alla Zucca e Rosmarino\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare riso carnaroli 320g, zucca butternut 400g, cipolla 1. \n\nCome primo passo fondamentale, dovrete cuocere la zucca a cubetti in forno a 180°C per 20 minuti. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: soffriggere la cipolla e tostare il riso, sfumare con vino bianco. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di aggiungere il brodo poco alla volta mescolando per 18 minuti. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, unire la zucca, mantecare con burro e parmigiano, decorare con rosmarino. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "primo-03",
@@ -96,12 +204,28 @@
     "category": "Primi Piatti",
     "description": "Soffici gnocchi di patate senza glutine con ragù bianco di vitello profumato al timo e carote.",
     "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=600&auto=format&fit=crop",
-    "ingredients": ["Gnocchi senza glutine 500g", "Macinato di vitello 300g", "Carote 2", "Sedano 1 costa", "Cipolla 1", "Vino bianco", "Timo", "Olio EVO"],
-    "steps": ["Soffriggere il trito di carote, sedano e cipolla.", "Aggiungere la carne e rosolare bene, sfumare con vino bianco.", "Cuocere coperto per 30 minuti a fuoco basso con timo.", "Cuocere gli gnocchi e condire con il ragù."],
+    "ingredients": [
+      "Gnocchi senza glutine 500g",
+      "Macinato di vitello 300g",
+      "Carote 2",
+      "Sedano 1 costa",
+      "Cipolla 1",
+      "Vino bianco",
+      "Timo",
+      "Olio EVO"
+    ],
+    "steps": [
+      "Soffriggere il trito di carote, sedano e cipolla.",
+      "Aggiungere la carne e rosolare bene, sfumare con vino bianco.",
+      "Cuocere coperto per 30 minuti a fuoco basso con timo.",
+      "Cuocere gli gnocchi e condire con il ragù."
+    ],
     "difficulty": "Media",
     "prepTime": "50 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Marco V.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Gnocchi di Patate al Ragù Bianco\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare gnocchi senza glutine 500g, macinato di vitello 300g, carote 2. \n\nCome primo passo fondamentale, dovrete soffriggere il trito di carote, sedano e cipolla. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: aggiungere la carne e rosolare bene, sfumare con vino bianco. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di cuocere coperto per 30 minuti a fuoco basso con timo. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, cuocere gli gnocchi e condire con il ragù. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "primo-04",
@@ -109,12 +233,28 @@
     "category": "Primi Piatti",
     "description": "Zuppa calda e speziata di lenticchie rosse con curcuma, zenzero e latte di cocco. Naturalmente senza glutine.",
     "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&auto=format&fit=crop",
-    "ingredients": ["Lenticchie rosse 250g", "Latte di cocco 200ml", "Curcuma 1 cucchiaino", "Zenzero fresco", "Cipolla 1", "Aglio 2 spicchi", "Brodo vegetale 500ml", "Coriandolo fresco"],
-    "steps": ["Soffriggere cipolla e aglio, aggiungere curcuma e zenzero.", "Unire le lenticchie e il brodo vegetale.", "Cuocere per 20 minuti fino a quando le lenticchie sono morbide.", "Aggiungere il latte di cocco, frullare parzialmente e servire con coriandolo."],
+    "ingredients": [
+      "Lenticchie rosse 250g",
+      "Latte di cocco 200ml",
+      "Curcuma 1 cucchiaino",
+      "Zenzero fresco",
+      "Cipolla 1",
+      "Aglio 2 spicchi",
+      "Brodo vegetale 500ml",
+      "Coriandolo fresco"
+    ],
+    "steps": [
+      "Soffriggere cipolla e aglio, aggiungere curcuma e zenzero.",
+      "Unire le lenticchie e il brodo vegetale.",
+      "Cuocere per 20 minuti fino a quando le lenticchie sono morbide.",
+      "Aggiungere il latte di cocco, frullare parzialmente e servire con coriandolo."
+    ],
     "difficulty": "Facile",
     "prepTime": "30 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Roberto F.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Zuppa di Lenticchie e Curcuma\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare lenticchie rosse 250g, latte di cocco 200ml, curcuma 1 cucchiaino. \n\nCome primo passo fondamentale, dovrete soffriggere cipolla e aglio, aggiungere curcuma e zenzero. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: unire le lenticchie e il brodo vegetale. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di cuocere per 20 minuti fino a quando le lenticchie sono morbide. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, aggiungere il latte di cocco, frullare parzialmente e servire con coriandolo. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "primo-05",
@@ -122,12 +262,27 @@
     "category": "Primi Piatti",
     "description": "Lasagna senza glutine a strati con verdure grigliate, besciamella leggera e mozzarella filante.",
     "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=600&auto=format&fit=crop",
-    "ingredients": ["Sfoglie lasagna senza glutine", "Melanzane 2", "Zucchine 2", "Peperoni 2", "Besciamella senza glutine 500ml", "Mozzarella 200g", "Parmigiano 50g"],
-    "steps": ["Grigliare le verdure tagliate a fette.", "Preparare la besciamella senza glutine con farina di riso.", "Alternare strati di sfoglie, verdure, besciamella e mozzarella.", "Cuocere in forno a 180°C per 35 minuti fino a doratura."],
+    "ingredients": [
+      "Sfoglie lasagna senza glutine",
+      "Melanzane 2",
+      "Zucchine 2",
+      "Peperoni 2",
+      "Besciamella senza glutine 500ml",
+      "Mozzarella 200g",
+      "Parmigiano 50g"
+    ],
+    "steps": [
+      "Grigliare le verdure tagliate a fette.",
+      "Preparare la besciamella senza glutine con farina di riso.",
+      "Alternare strati di sfoglie, verdure, besciamella e mozzarella.",
+      "Cuocere in forno a 180°C per 35 minuti fino a doratura."
+    ],
     "difficulty": "Media",
     "prepTime": "60 min",
     "servings": 6,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Maria R.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Lasagna di Verdure Grigliate\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare sfoglie lasagna senza glutine, melanzane 2, zucchine 2. \n\nCome primo passo fondamentale, dovrete grigliare le verdure tagliate a fette. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: preparare la besciamella senza glutine con farina di riso. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di alternare strati di sfoglie, verdure, besciamella e mozzarella. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, cuocere in forno a 180°C per 35 minuti fino a doratura. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "secondo-01",
@@ -135,12 +290,28 @@
     "category": "Secondi",
     "description": "Petto di pollo marinato al limone con rosmarino e timo, cotto al forno fino a doratura perfetta.",
     "image": "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&auto=format&fit=crop",
-    "ingredients": ["Petti di pollo 4", "Limoni 2", "Rosmarino", "Timo", "Aglio 3 spicchi", "Olio EVO", "Sale", "Pepe"],
-    "steps": ["Marinare il pollo con succo di limone, erbe, aglio e olio per 30 minuti.", "Disporre in teglia con fette di limone.", "Cuocere in forno a 190°C per 30 minuti.", "Servire con il fondo di cottura come salsa."],
+    "ingredients": [
+      "Petti di pollo 4",
+      "Limoni 2",
+      "Rosmarino",
+      "Timo",
+      "Aglio 3 spicchi",
+      "Olio EVO",
+      "Sale",
+      "Pepe"
+    ],
+    "steps": [
+      "Marinare il pollo con succo di limone, erbe, aglio e olio per 30 minuti.",
+      "Disporre in teglia con fette di limone.",
+      "Cuocere in forno a 190°C per 30 minuti.",
+      "Servire con il fondo di cottura come salsa."
+    ],
     "difficulty": "Facile",
     "prepTime": "45 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Luca B.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Pollo al Limone e Erbe Aromatiche\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare petti di pollo 4, limoni 2, rosmarino. \n\nCome primo passo fondamentale, dovrete marinare il pollo con succo di limone, erbe, aglio e olio per 30 minuti. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: disporre in teglia con fette di limone. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di cuocere in forno a 190°C per 30 minuti. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, servire con il fondo di cottura come salsa. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "secondo-02",
@@ -148,12 +319,27 @@
     "category": "Secondi",
     "description": "Filetto di salmone ricoperto da una croccante panatura di mandorle tritate ed erbe, cotto al forno.",
     "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&auto=format&fit=crop",
-    "ingredients": ["Filetti di salmone 4", "Mandorle tritate 100g", "Prezzemolo", "Scorza di limone", "Senape di Digione", "Olio EVO", "Sale"],
-    "steps": ["Mescolare mandorle tritate con prezzemolo, scorza di limone e olio.", "Spennellare i filetti con senape.", "Ricoprire con il mix di mandorle pressando bene.", "Cuocere in forno a 200°C per 15-18 minuti."],
+    "ingredients": [
+      "Filetti di salmone 4",
+      "Mandorle tritate 100g",
+      "Prezzemolo",
+      "Scorza di limone",
+      "Senape di Digione",
+      "Olio EVO",
+      "Sale"
+    ],
+    "steps": [
+      "Mescolare mandorle tritate con prezzemolo, scorza di limone e olio.",
+      "Spennellare i filetti con senape.",
+      "Ricoprire con il mix di mandorle pressando bene.",
+      "Cuocere in forno a 200°C per 15-18 minuti."
+    ],
     "difficulty": "Media",
     "prepTime": "30 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Maria R.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Salmone in Crosta di Mandorle\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare filetti di salmone 4, mandorle tritate 100g, prezzemolo. \n\nCome primo passo fondamentale, dovrete mescolare mandorle tritate con prezzemolo, scorza di limone e olio. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: spennellare i filetti con senape. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di ricoprire con il mix di mandorle pressando bene. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, cuocere in forno a 200°C per 15-18 minuti. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "secondo-03",
@@ -161,12 +347,27 @@
     "category": "Secondi",
     "description": "Morbide polpette di tacchino e zucchine grattugiate, cotte al forno e servite con salsa di pomodoro.",
     "image": "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&auto=format&fit=crop",
-    "ingredients": ["Macinato di tacchino 500g", "Zucchine 2", "Uovo 1", "Parmigiano 40g", "Farina di riso", "Basilico", "Passata di pomodoro 300ml"],
-    "steps": ["Grattugiare le zucchine e strizzarle bene.", "Mescolare con tacchino, uovo, parmigiano e farina di riso.", "Formare polpette e adagiarle sulla passata in una teglia.", "Cuocere in forno a 180°C per 25 minuti."],
+    "ingredients": [
+      "Macinato di tacchino 500g",
+      "Zucchine 2",
+      "Uovo 1",
+      "Parmigiano 40g",
+      "Farina di riso",
+      "Basilico",
+      "Passata di pomodoro 300ml"
+    ],
+    "steps": [
+      "Grattugiare le zucchine e strizzarle bene.",
+      "Mescolare con tacchino, uovo, parmigiano e farina di riso.",
+      "Formare polpette e adagiarle sulla passata in una teglia.",
+      "Cuocere in forno a 180°C per 25 minuti."
+    ],
     "difficulty": "Facile",
     "prepTime": "40 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Luca B.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Polpette di Tacchino e Zucchine\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare macinato di tacchino 500g, zucchine 2, uovo 1. \n\nCome primo passo fondamentale, dovrete grattugiare le zucchine e strizzarle bene. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: mescolare con tacchino, uovo, parmigiano e farina di riso. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di formare polpette e adagiarle sulla passata in una teglia. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, cuocere in forno a 180°C per 25 minuti. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "secondo-04",
@@ -174,12 +375,27 @@
     "category": "Secondi",
     "description": "Tagliata di controfiletto di manzo su letto di rucola con scaglie di Grana Padano e aceto balsamico.",
     "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=600&auto=format&fit=crop",
-    "ingredients": ["Controfiletto di manzo 600g", "Rucola 100g", "Grana Padano a scaglie", "Aceto balsamico", "Olio EVO", "Sale grosso", "Pepe nero"],
-    "steps": ["Portare la carne a temperatura ambiente e condire con sale e pepe.", "Cuocere su piastra rovente 3-4 minuti per lato (al sangue).", "Far riposare 5 minuti coperta con alluminio.", "Affettare e servire su rucola con grana e aceto balsamico."],
+    "ingredients": [
+      "Controfiletto di manzo 600g",
+      "Rucola 100g",
+      "Grana Padano a scaglie",
+      "Aceto balsamico",
+      "Olio EVO",
+      "Sale grosso",
+      "Pepe nero"
+    ],
+    "steps": [
+      "Portare la carne a temperatura ambiente e condire con sale e pepe.",
+      "Cuocere su piastra rovente 3-4 minuti per lato (al sangue).",
+      "Far riposare 5 minuti coperta con alluminio.",
+      "Affettare e servire su rucola con grana e aceto balsamico."
+    ],
     "difficulty": "Media",
     "prepTime": "25 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Community Arcobaleno",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Tagliata di Manzo con Rucola e Grana\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare controfiletto di manzo 600g, rucola 100g, grana padano a scaglie. \n\nCome primo passo fondamentale, dovrete portare la carne a temperatura ambiente e condire con sale e pepe. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: cuocere su piastra rovente 3-4 minuti per lato (al sangue). Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di far riposare 5 minuti coperta con alluminio. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, affettare e servire su rucola con grana e aceto balsamico. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "secondo-05",
@@ -187,12 +403,28 @@
     "category": "Secondi",
     "description": "Classica frittata alta e soffice con patate a rondelle e cipolle caramellate. Naturalmente senza glutine.",
     "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop",
-    "ingredients": ["Uova 6", "Patate 3 medie", "Cipolle 2", "Parmigiano 40g", "Olio EVO", "Sale", "Pepe", "Prezzemolo"],
-    "steps": ["Sbucciare e tagliare le patate a rondelle sottili, le cipolle a fette.", "Cuocere patate e cipolle in padella con olio fino a doratura.", "Sbattere le uova con parmigiano, sale e prezzemolo.", "Unire tutto in padella e cuocere coperto a fuoco basso per 15 minuti, poi girare."],
+    "ingredients": [
+      "Uova 6",
+      "Patate 3 medie",
+      "Cipolle 2",
+      "Parmigiano 40g",
+      "Olio EVO",
+      "Sale",
+      "Pepe",
+      "Prezzemolo"
+    ],
+    "steps": [
+      "Sbucciare e tagliare le patate a rondelle sottili, le cipolle a fette.",
+      "Cuocere patate e cipolle in padella con olio fino a doratura.",
+      "Sbattere le uova con parmigiano, sale e prezzemolo.",
+      "Unire tutto in padella e cuocere coperto a fuoco basso per 15 minuti, poi girare."
+    ],
     "difficulty": "Facile",
     "prepTime": "35 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Marco V.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Frittata di Patate e Cipolle\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare uova 6, patate 3 medie, cipolle 2. \n\nCome primo passo fondamentale, dovrete sbucciare e tagliare le patate a rondelle sottili, le cipolle a fette. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: cuocere patate e cipolle in padella con olio fino a doratura. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di sbattere le uova con parmigiano, sale e prezzemolo. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, unire tutto in padella e cuocere coperto a fuoco basso per 15 minuti, poi girare. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "contorno-01",
@@ -200,12 +432,28 @@
     "category": "Contorni",
     "description": "Ricca caponata di melanzane con olive, capperi e salsa agrodolce. Un classico della tradizione siciliana.",
     "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&auto=format&fit=crop",
-    "ingredients": ["Melanzane 3", "Pomodori pelati 400g", "Sedano 2 coste", "Cipolla 1", "Olive verdi 80g", "Capperi 30g", "Aceto di vino", "Zucchero 1 cucchiaio"],
-    "steps": ["Friggere le melanzane a cubetti fino a doratura.", "Soffriggere cipolla e sedano, aggiungere pomodori.", "Unire olive, capperi, aceto e zucchero per l'agrodolce.", "Aggiungere le melanzane e cuocere 10 minuti. Servire tiepida."],
+    "ingredients": [
+      "Melanzane 3",
+      "Pomodori pelati 400g",
+      "Sedano 2 coste",
+      "Cipolla 1",
+      "Olive verdi 80g",
+      "Capperi 30g",
+      "Aceto di vino",
+      "Zucchero 1 cucchiaio"
+    ],
+    "steps": [
+      "Friggere le melanzane a cubetti fino a doratura.",
+      "Soffriggere cipolla e sedano, aggiungere pomodori.",
+      "Unire olive, capperi, aceto e zucchero per l'agrodolce.",
+      "Aggiungere le melanzane e cuocere 10 minuti. Servire tiepida."
+    ],
     "difficulty": "Media",
     "prepTime": "40 min",
     "servings": 6,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Community Arcobaleno",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Caponata Siciliana\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare melanzane 3, pomodori pelati 400g, sedano 2 coste. \n\nCome primo passo fondamentale, dovrete friggere le melanzane a cubetti fino a doratura. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: soffriggere cipolla e sedano, aggiungere pomodori. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di unire olive, capperi, aceto e zucchero per l'agrodolce. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, aggiungere le melanzane e cuocere 10 minuti. Servire tiepida. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "contorno-02",
@@ -213,12 +461,27 @@
     "category": "Contorni",
     "description": "Patate croccanti al forno con rosmarino fresco e aglio. Il contorno perfetto per ogni secondo piatto.",
     "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&auto=format&fit=crop",
-    "ingredients": ["Patate 1kg", "Rosmarino fresco", "Aglio 4 spicchi", "Olio EVO", "Sale grosso", "Pepe", "Paprika"],
-    "steps": ["Tagliare le patate a spicchi e lessarle per 5 minuti.", "Condire con olio, rosmarino, aglio schiacciato e paprika.", "Disporre in teglia su carta forno in un unico strato.", "Cuocere a 200°C per 40 minuti girando a metà cottura."],
+    "ingredients": [
+      "Patate 1kg",
+      "Rosmarino fresco",
+      "Aglio 4 spicchi",
+      "Olio EVO",
+      "Sale grosso",
+      "Pepe",
+      "Paprika"
+    ],
+    "steps": [
+      "Tagliare le patate a spicchi e lessarle per 5 minuti.",
+      "Condire con olio, rosmarino, aglio schiacciato e paprika.",
+      "Disporre in teglia su carta forno in un unico strato.",
+      "Cuocere a 200°C per 40 minuti girando a metà cottura."
+    ],
     "difficulty": "Facile",
     "prepTime": "50 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Luca B.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Patate al Forno con Rosmarino\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare patate 1kg, rosmarino fresco, aglio 4 spicchi. \n\nCome primo passo fondamentale, dovrete tagliare le patate a spicchi e lessarle per 5 minuti. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: condire con olio, rosmarino, aglio schiacciato e paprika. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di disporre in teglia su carta forno in un unico strato. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, cuocere a 200°C per 40 minuti girando a metà cottura. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "contorno-03",
@@ -226,12 +489,27 @@
     "category": "Contorni",
     "description": "Insalata nutriente di quinoa con zucchine, pomodorini, feta e menta fresca. Perfetta anche come piatto unico.",
     "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&auto=format&fit=crop",
-    "ingredients": ["Quinoa 200g", "Zucchine 2", "Pomodorini 200g", "Feta 100g", "Menta fresca", "Olio EVO", "Limone"],
-    "steps": ["Cuocere la quinoa in acqua salata per 15 minuti, scolare e raffreddare.", "Grigliare le zucchine a cubetti.", "Mescolare quinoa, zucchine, pomodorini tagliati e feta sbriciolata.", "Condire con olio, limone e menta fresca."],
+    "ingredients": [
+      "Quinoa 200g",
+      "Zucchine 2",
+      "Pomodorini 200g",
+      "Feta 100g",
+      "Menta fresca",
+      "Olio EVO",
+      "Limone"
+    ],
+    "steps": [
+      "Cuocere la quinoa in acqua salata per 15 minuti, scolare e raffreddare.",
+      "Grigliare le zucchine a cubetti.",
+      "Mescolare quinoa, zucchine, pomodorini tagliati e feta sbriciolata.",
+      "Condire con olio, limone e menta fresca."
+    ],
     "difficulty": "Facile",
     "prepTime": "25 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Maria R.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Insalata Tiepida di Quinoa e Verdure\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare quinoa 200g, zucchine 2, pomodorini 200g. \n\nCome primo passo fondamentale, dovrete cuocere la quinoa in acqua salata per 15 minuti, scolare e raffreddare. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: grigliare le zucchine a cubetti. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di mescolare quinoa, zucchine, pomodorini tagliati e feta sbriciolata. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, condire con olio, limone e menta fresca. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "contorno-04",
@@ -239,12 +517,27 @@
     "category": "Contorni",
     "description": "Peperoni rossi e gialli arrostiti al forno, conditi con capperi, olive nere e origano.",
     "image": "https://images.unsplash.com/photo-1590005354167-6da97870c757?w=600&auto=format&fit=crop",
-    "ingredients": ["Peperoni rossi 2", "Peperoni gialli 2", "Capperi 30g", "Olive nere 50g", "Aglio 2 spicchi", "Origano", "Olio EVO"],
-    "steps": ["Arrostire i peperoni interi in forno a 220°C per 30 minuti.", "Lasciarli raffreddare in un sacchetto chiuso per spellare facilmente.", "Tagliare a listarelle e condire con capperi, olive, aglio e origano.", "Servire a temperatura ambiente."],
+    "ingredients": [
+      "Peperoni rossi 2",
+      "Peperoni gialli 2",
+      "Capperi 30g",
+      "Olive nere 50g",
+      "Aglio 2 spicchi",
+      "Origano",
+      "Olio EVO"
+    ],
+    "steps": [
+      "Arrostire i peperoni interi in forno a 220°C per 30 minuti.",
+      "Lasciarli raffreddare in un sacchetto chiuso per spellare facilmente.",
+      "Tagliare a listarelle e condire con capperi, olive, aglio e origano.",
+      "Servire a temperatura ambiente."
+    ],
     "difficulty": "Facile",
     "prepTime": "45 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Community Arcobaleno",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Peperoni Arrostiti con Capperi\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare peperoni rossi 2, peperoni gialli 2, capperi 30g. \n\nCome primo passo fondamentale, dovrete arrostire i peperoni interi in forno a 220°C per 30 minuti. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: lasciarli raffreddare in un sacchetto chiuso per spellare facilmente. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di tagliare a listarelle e condire con capperi, olive, aglio e origano. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, servire a temperatura ambiente. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "contorno-05",
@@ -252,12 +545,27 @@
     "category": "Contorni",
     "description": "Fagiolini freschi stufati con pomodoro, aglio e basilico. Un contorno semplice e saporito della tradizione.",
     "image": "https://images.unsplash.com/photo-1543339308-d595c4975cfc?w=600&auto=format&fit=crop",
-    "ingredients": ["Fagiolini 500g", "Passata di pomodoro 200ml", "Aglio 2 spicchi", "Basilico", "Olio EVO", "Sale", "Pepe"],
-    "steps": ["Spuntare e lavare i fagiolini.", "Soffriggere l'aglio in olio, aggiungere la passata di pomodoro.", "Unire i fagiolini, coprire e cuocere a fuoco medio per 20 minuti.", "Completare con basilico fresco e servire."],
+    "ingredients": [
+      "Fagiolini 500g",
+      "Passata di pomodoro 200ml",
+      "Aglio 2 spicchi",
+      "Basilico",
+      "Olio EVO",
+      "Sale",
+      "Pepe"
+    ],
+    "steps": [
+      "Spuntare e lavare i fagiolini.",
+      "Soffriggere l'aglio in olio, aggiungere la passata di pomodoro.",
+      "Unire i fagiolini, coprire e cuocere a fuoco medio per 20 minuti.",
+      "Completare con basilico fresco e servire."
+    ],
     "difficulty": "Facile",
     "prepTime": "30 min",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Luca B.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Fagiolini al Pomodoro\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare fagiolini 500g, passata di pomodoro 200ml, aglio 2 spicchi. \n\nCome primo passo fondamentale, dovrete spuntare e lavare i fagiolini. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: soffriggere l'aglio in olio, aggiungere la passata di pomodoro. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di unire i fagiolini, coprire e cuocere a fuoco medio per 20 minuti. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, completare con basilico fresco e servire. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "dolce-01",
@@ -265,12 +573,27 @@
     "category": "Dolci",
     "description": "Torta densa e cioccolatosa preparata con farina di mandorle. Senza glutine e irresistibilmente golosa.",
     "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop",
-    "ingredients": ["Cioccolato fondente 200g", "Burro 150g", "Uova 4", "Zucchero 150g", "Farina di mandorle 100g", "Cacao amaro 30g", "Vaniglia"],
-    "steps": ["Sciogliere cioccolato e burro a bagnomaria.", "Montare uova e zucchero fino a ottenere un composto spumoso.", "Incorporare il cioccolato fuso, la farina di mandorle e il cacao.", "Versare in tortiera imburrata e cuocere a 170°C per 30 minuti."],
+    "ingredients": [
+      "Cioccolato fondente 200g",
+      "Burro 150g",
+      "Uova 4",
+      "Zucchero 150g",
+      "Farina di mandorle 100g",
+      "Cacao amaro 30g",
+      "Vaniglia"
+    ],
+    "steps": [
+      "Sciogliere cioccolato e burro a bagnomaria.",
+      "Montare uova e zucchero fino a ottenere un composto spumoso.",
+      "Incorporare il cioccolato fuso, la farina di mandorle e il cacao.",
+      "Versare in tortiera imburrata e cuocere a 170°C per 30 minuti."
+    ],
     "difficulty": "Media",
     "prepTime": "45 min",
     "servings": 8,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Gloria Senza Glutine",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Torta al Cioccolato Fondente\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare cioccolato fondente 200g, burro 150g, uova 4. \n\nCome primo passo fondamentale, dovrete sciogliere cioccolato e burro a bagnomaria. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: montare uova e zucchero fino a ottenere un composto spumoso. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di incorporare il cioccolato fuso, la farina di mandorle e il cacao. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, versare in tortiera imburrata e cuocere a 170°C per 30 minuti. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "dolce-02",
@@ -278,12 +601,26 @@
     "category": "Dolci",
     "description": "Classica panna cotta italiana con vaniglia bourbon, servita con coulis di frutti di bosco.",
     "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&auto=format&fit=crop",
-    "ingredients": ["Panna fresca 500ml", "Zucchero 80g", "Baccello di vaniglia 1", "Gelatina in fogli 6g", "Frutti di bosco 200g", "Zucchero a velo"],
-    "steps": ["Ammollare la gelatina in acqua fredda.", "Scaldare la panna con zucchero e semi di vaniglia senza bollire.", "Sciogliere la gelatina nella panna calda.", "Versare negli stampini e refrigerare per almeno 4 ore. Servire con coulis."],
+    "ingredients": [
+      "Panna fresca 500ml",
+      "Zucchero 80g",
+      "Baccello di vaniglia 1",
+      "Gelatina in fogli 6g",
+      "Frutti di bosco 200g",
+      "Zucchero a velo"
+    ],
+    "steps": [
+      "Ammollare la gelatina in acqua fredda.",
+      "Scaldare la panna con zucchero e semi di vaniglia senza bollire.",
+      "Sciogliere la gelatina nella panna calda.",
+      "Versare negli stampini e refrigerare per almeno 4 ore. Servire con coulis."
+    ],
     "difficulty": "Facile",
     "prepTime": "20 min + 4h riposo",
     "servings": 6,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Marco V.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Panna Cotta alla Vaniglia\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare panna fresca 500ml, zucchero 80g, baccello di vaniglia 1. \n\nCome primo passo fondamentale, dovrete ammollare la gelatina in acqua fredda. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: scaldare la panna con zucchero e semi di vaniglia senza bollire. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di sciogliere la gelatina nella panna calda. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, versare negli stampini e refrigerare per almeno 4 ore. Servire con coulis. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "dolce-03",
@@ -291,12 +628,27 @@
     "category": "Dolci",
     "description": "L'intramontabile tiramisù rivisitato con savoiardi senza glutine, mascarpone e caffè espresso.",
     "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&auto=format&fit=crop",
-    "ingredients": ["Savoiardi senza glutine 200g", "Mascarpone 500g", "Uova 3", "Zucchero 100g", "Caffè espresso 300ml", "Cacao amaro", "Marsala (opzionale)"],
-    "steps": ["Separare i tuorli dagli albumi. Montare i tuorli con lo zucchero.", "Aggiungere il mascarpone e mescolare delicatamente.", "Montare gli albumi a neve e incorporarli al composto.", "Inzuppare i savoiardi nel caffè, alternare strati di crema e biscotti. Spolverare con cacao."],
+    "ingredients": [
+      "Savoiardi senza glutine 200g",
+      "Mascarpone 500g",
+      "Uova 3",
+      "Zucchero 100g",
+      "Caffè espresso 300ml",
+      "Cacao amaro",
+      "Marsala (opzionale)"
+    ],
+    "steps": [
+      "Separare i tuorli dagli albumi. Montare i tuorli con lo zucchero.",
+      "Aggiungere il mascarpone e mescolare delicatamente.",
+      "Montare gli albumi a neve e incorporarli al composto.",
+      "Inzuppare i savoiardi nel caffè, alternare strati di crema e biscotti. Spolverare con cacao."
+    ],
     "difficulty": "Media",
     "prepTime": "30 min + 4h riposo",
     "servings": 8,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Marco V.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Tiramisù Senza Glutine\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare savoiardi senza glutine 200g, mascarpone 500g, uova 3. \n\nCome primo passo fondamentale, dovrete separare i tuorli dagli albumi. Montare i tuorli con lo zucchero. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: aggiungere il mascarpone e mescolare delicatamente. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di montare gli albumi a neve e incorporarli al composto. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, inzuppare i savoiardi nel caffè, alternare strati di crema e biscotti. Spolverare con cacao. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "dolce-04",
@@ -304,12 +656,28 @@
     "category": "Dolci",
     "description": "Crostata con frolla senza glutine e crema pasticciera, decorata con frutta fresca di stagione.",
     "image": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=600&auto=format&fit=crop",
-    "ingredients": ["Farina senza glutine 250g", "Burro freddo 125g", "Zucchero 80g", "Uovo 1", "Latte 500ml", "Tuorli 3", "Amido di mais 40g", "Frutta fresca assortita"],
-    "steps": ["Preparare la frolla impastando farina, burro, zucchero e uovo. Refrigerare 30 minuti.", "Preparare la crema pasticciera con latte, tuorli, zucchero e amido.", "Stendere la frolla in una tortiera e cuocere in bianco a 180°C per 20 minuti.", "Far raffreddare, farcire con crema e decorare con frutta."],
+    "ingredients": [
+      "Farina senza glutine 250g",
+      "Burro freddo 125g",
+      "Zucchero 80g",
+      "Uovo 1",
+      "Latte 500ml",
+      "Tuorli 3",
+      "Amido di mais 40g",
+      "Frutta fresca assortita"
+    ],
+    "steps": [
+      "Preparare la frolla impastando farina, burro, zucchero e uovo. Refrigerare 30 minuti.",
+      "Preparare la crema pasticciera con latte, tuorli, zucchero e amido.",
+      "Stendere la frolla in una tortiera e cuocere in bianco a 180°C per 20 minuti.",
+      "Far raffreddare, farcire con crema e decorare con frutta."
+    ],
     "difficulty": "Media",
     "prepTime": "60 min + riposo",
     "servings": 8,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Chiara N.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Crostata di Frutta Fresca\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare farina senza glutine 250g, burro freddo 125g, zucchero 80g. \n\nCome primo passo fondamentale, dovrete preparare la frolla impastando farina, burro, zucchero e uovo. Refrigerare 30 minuti. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: preparare la crema pasticciera con latte, tuorli, zucchero e amido. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di stendere la frolla in una tortiera e cuocere in bianco a 180°C per 20 minuti. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, far raffreddare, farcire con crema e decorare con frutta. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "dolce-05",
@@ -317,12 +685,24 @@
     "category": "Dolci",
     "description": "Biscottini friabili alle nocciole del Piemonte con solo 4 ingredienti. Perfetti per la merenda.",
     "image": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop",
-    "ingredients": ["Nocciole tostate 200g", "Zucchero 100g", "Albume d'uovo 2", "Vaniglia"],
-    "steps": ["Frullare le nocciole con lo zucchero fino a ottenere una farina grossolana.", "Aggiungere gli albumi e la vaniglia, mescolare.", "Formare palline e disporle su teglia con carta forno.", "Cuocere a 170°C per 15 minuti. Saranno morbidi ma si induriranno raffreddandosi."],
+    "ingredients": [
+      "Nocciole tostate 200g",
+      "Zucchero 100g",
+      "Albume d'uovo 2",
+      "Vaniglia"
+    ],
+    "steps": [
+      "Frullare le nocciole con lo zucchero fino a ottenere una farina grossolana.",
+      "Aggiungere gli albumi e la vaniglia, mescolare.",
+      "Formare palline e disporle su teglia con carta forno.",
+      "Cuocere a 170°C per 15 minuti. Saranno morbidi ma si induriranno raffreddandosi."
+    ],
     "difficulty": "Facile",
     "prepTime": "25 min",
     "servings": 20,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Community Arcobaleno",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Biscotti alle Nocciole\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare nocciole tostate 200g, zucchero 100g, albume d'uovo 2. \n\nCome primo passo fondamentale, dovrete frullare le nocciole con lo zucchero fino a ottenere una farina grossolana. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: aggiungere gli albumi e la vaniglia, mescolare. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di formare palline e disporle su teglia con carta forno. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, cuocere a 170°C per 15 minuti. Saranno morbidi ma si induriranno raffreddandosi. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "altro-01",
@@ -330,12 +710,27 @@
     "category": "Altro",
     "description": "Pane morbido e fragrante con mix di farine senza glutine. Crosta croccante e mollica soffice.",
     "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&auto=format&fit=crop",
-    "ingredients": ["Mix farine senza glutine 500g", "Lievito di birra fresco 25g", "Acqua tiepida 350ml", "Olio EVO 30ml", "Zucchero 10g", "Sale 8g", "Psyllium 10g"],
-    "steps": ["Sciogliere il lievito nell'acqua tiepida con lo zucchero.", "Mescolare le farine con sale e psyllium, aggiungere il lievito e l'olio.", "Impastare per 5 minuti e lasciar lievitare 1 ora coperto.", "Formare il pane, lasciar lievitare 30 minuti e cuocere a 200°C per 35 minuti con vapore."],
+    "ingredients": [
+      "Mix farine senza glutine 500g",
+      "Lievito di birra fresco 25g",
+      "Acqua tiepida 350ml",
+      "Olio EVO 30ml",
+      "Zucchero 10g",
+      "Sale 8g",
+      "Psyllium 10g"
+    ],
+    "steps": [
+      "Sciogliere il lievito nell'acqua tiepida con lo zucchero.",
+      "Mescolare le farine con sale e psyllium, aggiungere il lievito e l'olio.",
+      "Impastare per 5 minuti e lasciar lievitare 1 ora coperto.",
+      "Formare il pane, lasciar lievitare 30 minuti e cuocere a 200°C per 35 minuti con vapore."
+    ],
     "difficulty": "Media",
     "prepTime": "2h 30 min",
     "servings": 1,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Luca B.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Pane Senza Glutine Fatto in Casa\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare mix farine senza glutine 500g, lievito di birra fresco 25g, acqua tiepida 350ml. \n\nCome primo passo fondamentale, dovrete sciogliere il lievito nell'acqua tiepida con lo zucchero. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: mescolare le farine con sale e psyllium, aggiungere il lievito e l'olio. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di impastare per 5 minuti e lasciar lievitare 1 ora coperto. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, formare il pane, lasciar lievitare 30 minuti e cuocere a 200°C per 35 minuti con vapore. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "altro-02",
@@ -343,12 +738,27 @@
     "category": "Altro",
     "description": "Focaccia alta e soffice come quella ligure, condita con olio d'oliva e sale grosso.",
     "image": "https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?w=600&auto=format&fit=crop",
-    "ingredients": ["Mix farine senza glutine 400g", "Acqua tiepida 300ml", "Lievito secco 7g", "Olio EVO 80ml", "Sale 6g", "Sale grosso", "Rosmarino"],
-    "steps": ["Mescolare farine, lievito, acqua, 40ml di olio e sale.", "Stendere in teglia oliata e lasciar lievitare 1 ora.", "Fare le fossette con le dita, condire con olio, sale grosso e rosmarino.", "Cuocere a 220°C per 20 minuti fino a doratura."],
+    "ingredients": [
+      "Mix farine senza glutine 400g",
+      "Acqua tiepida 300ml",
+      "Lievito secco 7g",
+      "Olio EVO 80ml",
+      "Sale 6g",
+      "Sale grosso",
+      "Rosmarino"
+    ],
+    "steps": [
+      "Mescolare farine, lievito, acqua, 40ml di olio e sale.",
+      "Stendere in teglia oliata e lasciar lievitare 1 ora.",
+      "Fare le fossette con le dita, condire con olio, sale grosso e rosmarino.",
+      "Cuocere a 220°C per 20 minuti fino a doratura."
+    ],
     "difficulty": "Media",
     "prepTime": "2h",
     "servings": 6,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Maria R.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Focaccia alla Ligure Senza Glutine\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare mix farine senza glutine 400g, acqua tiepida 300ml, lievito secco 7g. \n\nCome primo passo fondamentale, dovrete mescolare farine, lievito, acqua, 40ml di olio e sale. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: stendere in teglia oliata e lasciar lievitare 1 ora. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di fare le fossette con le dita, condire con olio, sale grosso e rosmarino. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, cuocere a 220°C per 20 minuti fino a doratura. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "altro-03",
@@ -356,12 +766,26 @@
     "category": "Altro",
     "description": "Frullato energetico con banana, cacao, burro di arachidi e latte di mandorla. Post-allenamento perfetto.",
     "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=600&auto=format&fit=crop",
-    "ingredients": ["Banana matura 1", "Cacao amaro 15g", "Burro di arachidi 1 cucchiaio", "Latte di mandorla 250ml", "Miele 1 cucchiaino", "Ghiaccio"],
-    "steps": ["Tagliare la banana a pezzi.", "Frullare tutti gli ingredienti fino a ottenere un composto liscio.", "Aggiungere ghiaccio e frullare ancora.", "Versare nel bicchiere e servire subito."],
+    "ingredients": [
+      "Banana matura 1",
+      "Cacao amaro 15g",
+      "Burro di arachidi 1 cucchiaio",
+      "Latte di mandorla 250ml",
+      "Miele 1 cucchiaino",
+      "Ghiaccio"
+    ],
+    "steps": [
+      "Tagliare la banana a pezzi.",
+      "Frullare tutti gli ingredienti fino a ottenere un composto liscio.",
+      "Aggiungere ghiaccio e frullare ancora.",
+      "Versare nel bicchiere e servire subito."
+    ],
     "difficulty": "Facile",
     "prepTime": "5 min",
     "servings": 1,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Gloria Senza Glutine",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Smoothie Energetico alla Banana e Cacao\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare banana matura 1, cacao amaro 15g, burro di arachidi 1 cucchiaio. \n\nCome primo passo fondamentale, dovrete tagliare la banana a pezzi. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: frullare tutti gli ingredienti fino a ottenere un composto liscio. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di aggiungere ghiaccio e frullare ancora. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, versare nel bicchiere e servire subito. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "altro-04",
@@ -369,12 +793,28 @@
     "category": "Altro",
     "description": "Pizza con impasto senza glutine a lunga lievitazione. Croccante, digeribile e buona come in pizzeria.",
     "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&auto=format&fit=crop",
-    "ingredients": ["Mix farine senza glutine per pizza 500g", "Acqua 350ml", "Lievito di birra fresco 5g", "Olio EVO 20ml", "Sale 10g", "Zucchero 5g", "Mozzarella", "Passata"],
-    "steps": ["Sciogliere il lievito in acqua tiepida.", "Impastare con farine, olio, sale e zucchero per 10 minuti.", "Lasciar lievitare in frigo per 24 ore coperto.", "Stendere sulla teglia oliata, condire e cuocere a 250°C per 12-15 minuti."],
+    "ingredients": [
+      "Mix farine senza glutine per pizza 500g",
+      "Acqua 350ml",
+      "Lievito di birra fresco 5g",
+      "Olio EVO 20ml",
+      "Sale 10g",
+      "Zucchero 5g",
+      "Mozzarella",
+      "Passata"
+    ],
+    "steps": [
+      "Sciogliere il lievito in acqua tiepida.",
+      "Impastare con farine, olio, sale e zucchero per 10 minuti.",
+      "Lasciar lievitare in frigo per 24 ore coperto.",
+      "Stendere sulla teglia oliata, condire e cuocere a 250°C per 12-15 minuti."
+    ],
     "difficulty": "Media",
     "prepTime": "30 min + 24h lievitazione",
     "servings": 4,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Maria R.",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Pizza Senza Glutine con Lievitazione Lunga\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare mix farine senza glutine per pizza 500g, acqua 350ml, lievito di birra fresco 5g. \n\nCome primo passo fondamentale, dovrete sciogliere il lievito in acqua tiepida. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: impastare con farine, olio, sale e zucchero per 10 minuti. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di lasciar lievitare in frigo per 24 ore coperto. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, stendere sulla teglia oliata, condire e cuocere a 250°C per 12-15 minuti. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   },
   {
     "id": "altro-05",
@@ -382,11 +822,26 @@
     "category": "Altro",
     "description": "Crêpes sottili e delicate preparate con farina di riso e fecola. Perfette con Nutella o marmellata.",
     "image": "https://images.unsplash.com/photo-1519676867240-f03562e64548?w=600&auto=format&fit=crop",
-    "ingredients": ["Farina di riso 100g", "Fecola di patate 50g", "Uova 2", "Latte 300ml", "Burro fuso 20g", "Zucchero 20g", "Vaniglia"],
-    "steps": ["Mescolare le farine con zucchero.", "Aggiungere le uova, il latte e il burro fuso, sbattere fino a ottenere una pastella liscia.", "Lasciar riposare 30 minuti in frigo.", "Cuocere in padella antiaderente ben calda, un mestolino alla volta, 1 minuto per lato."],
+    "ingredients": [
+      "Farina di riso 100g",
+      "Fecola di patate 50g",
+      "Uova 2",
+      "Latte 300ml",
+      "Burro fuso 20g",
+      "Zucchero 20g",
+      "Vaniglia"
+    ],
+    "steps": [
+      "Mescolare le farine con zucchero.",
+      "Aggiungere le uova, il latte e il burro fuso, sbattere fino a ottenere una pastella liscia.",
+      "Lasciar riposare 30 minuti in frigo.",
+      "Cuocere in padella antiaderente ben calda, un mestolino alla volta, 1 minuto per lato."
+    ],
     "difficulty": "Facile",
     "prepTime": "15 min + 30 min riposo",
     "servings": 8,
-    "createdAt": "2026-03-18"
+    "createdAt": "2026-03-18",
+    "author": "Community Arcobaleno",
+    "longDescription": "Per iniziare la preparazione della ricetta \"Crêpes Dolci Senza Glutine\", assicuratevi di avere a disposizione ingredienti di prima qualità, in particolare farina di riso 100g, fecola di patate 50g, uova 2. \n\nCome primo passo fondamentale, dovrete mescolare le farine con zucchero. Prestate molta attenzione a questa fase iniziale, in quanto getterà le basi per la perfetta riuscita del vostro piatto senza glutine. \n\nSuccessivamente, procedete con cura: aggiungere le uova, il latte e il burro fuso, sbattere fino a ottenere una pastella liscia. Mentre lavorate gli ingredienti, noterete come le consistenze si amalgamano creando la base perfetta per la nostra ricetta. \n\nProseguendo con la lavorazione, la ricetta richiede di lasciar riposare 30 minuti in frigo. Questa operazione richiede un po' di delicatezza per mantenere intatti i sapori e garantire la giusta sofficità o croccantezza, tipica dei migliori prodotti artigianali. \n\nAvvicinandoci alla conclusione, cuocere in padella antiaderente ben calda, un mestolino alla volta, 1 minuto per lato. \n\nInfine, una volta completati tutti i passaggi, il vostro piatto è pronto per essere portato in tavola. Vi consigliamo di servirlo alla giusta temperatura per esaltarne ogni sfumatura di gusto. La cucina senza glutine, se affrontata con i giusti ingredienti e le corrette procedure, regala soddisfazioni immense, permettendo a chiunque di godere di un pasto sicuro, genuino e assolutamente delizioso, senza alcun compromesso sul sapore. Buon appetito dalla nostra community!"
   }
 ]
