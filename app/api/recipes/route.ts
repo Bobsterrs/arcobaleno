@@ -29,13 +29,19 @@ export async function GET(request: NextRequest) {
     const recipes = readRecipes();
     const { searchParams } = new URL(request.url);
     const category = searchParams.get('category');
+    
+    const isAdmin = searchParams.get('admin') === 'true' && isAuthorized(request);
 
-    if (category && category !== 'Tutti') {
-      const filtered = recipes.filter((r: { category: string }) => r.category === category);
-      return NextResponse.json(filtered);
+    let filtered = recipes;
+    if (!isAdmin) {
+      filtered = filtered.filter((r: any) => r.isVisible !== false);
     }
 
-    return NextResponse.json(recipes);
+    if (category && category !== 'Tutti') {
+      filtered = filtered.filter((r: { category: string }) => r.category === category);
+    }
+
+    return NextResponse.json(filtered);
   } catch {
     return NextResponse.json({ error: 'Failed to read recipes' }, { status: 500 });
   }
@@ -65,6 +71,37 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(newRecipe, { status: 201 });
   } catch {
     return NextResponse.json({ error: 'Failed to create recipe' }, { status: 500 });
+  }
+}
+
+// PUT /api/recipes?id=xxx (protected)
+export async function PUT(request: NextRequest) {
+  if (!isAuthorized(request)) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  try {
+    const { searchParams } = new URL(request.url);
+    const id = searchParams.get('id');
+
+    if (!id) {
+      return NextResponse.json({ error: 'Missing recipe id' }, { status: 400 });
+    }
+
+    const recipes = readRecipes();
+    const index = recipes.findIndex((r: { id: string }) => r.id === id);
+
+    if (index === -1) {
+      return NextResponse.json({ error: 'Recipe not found' }, { status: 404 });
+    }
+
+    const updatedData = await request.json();
+    recipes[index] = { ...recipes[index], ...updatedData };
+    writeRecipes(recipes);
+
+    return NextResponse.json(recipes[index]);
+  } catch {
+    return NextResponse.json({ error: 'Failed to update recipe' }, { status: 500 });
   }
 }
 

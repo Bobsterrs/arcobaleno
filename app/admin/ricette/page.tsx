@@ -16,6 +16,9 @@ interface Recipe {
   difficulty: string
   prepTime: string
   servings: number
+  author?: string
+  longDescription?: string
+  isVisible?: boolean
 }
 
 const categories = ["Antipasti", "Primi Piatti", "Secondi", "Contorni", "Dolci", "Altro"]
@@ -32,8 +35,7 @@ export default function AdminRicettePage() {
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null)
   const [successMessage, setSuccessMessage] = useState("")
 
-  // New recipe form state
-  const [newRecipe, setNewRecipe] = useState({
+  const emptyRecipe = {
     title: "",
     category: "Antipasti",
     description: "",
@@ -42,8 +44,40 @@ export default function AdminRicettePage() {
     steps: "",
     difficulty: "Facile",
     prepTime: "",
-    servings: 4
-  })
+    servings: 4,
+    author: "Arcobaleno Senza Glutine",
+    longDescription: "",
+    isVisible: true
+  }
+
+  // New/Edit recipe form state
+  const [newRecipe, setNewRecipe] = useState(emptyRecipe)
+  const [editingId, setEditingId] = useState<string | null>(null)
+
+  const openAddForm = () => {
+    setEditingId(null)
+    setNewRecipe(emptyRecipe)
+    setShowAddForm(true)
+  }
+
+  const openEditForm = (recipe: Recipe) => {
+    setEditingId(recipe.id)
+    setNewRecipe({
+      title: recipe.title,
+      category: recipe.category,
+      description: recipe.description,
+      image: recipe.image,
+      ingredients: recipe.ingredients.join("\n"),
+      steps: recipe.steps.join("\n"),
+      difficulty: recipe.difficulty,
+      prepTime: recipe.prepTime,
+      servings: recipe.servings,
+      author: recipe.author || "Arcobaleno Senza Glutine",
+      longDescription: recipe.longDescription || "",
+      isVisible: recipe.isVisible !== false
+    })
+    setShowAddForm(true)
+  }
 
   const credentials = btoa(`${username}:${password}`)
 
@@ -61,7 +95,11 @@ export default function AdminRicettePage() {
   const fetchRecipes = async () => {
     setIsLoading(true)
     try {
-      const res = await fetch("/api/recipes")
+      const res = await fetch("/api/recipes?admin=true", {
+        headers: {
+          "Authorization": `Basic ${credentials}`
+        }
+      })
       const data = await res.json()
       setRecipes(data)
     } catch (error) {
@@ -74,7 +112,7 @@ export default function AdminRicettePage() {
     if (isLoggedIn) fetchRecipes()
   }, [isLoggedIn])
 
-  const handleAddRecipe = async (e: React.FormEvent) => {
+  const handleSaveRecipe = async (e: React.FormEvent) => {
     e.preventDefault()
     try {
       const recipe = {
@@ -84,8 +122,11 @@ export default function AdminRicettePage() {
         servings: Number(newRecipe.servings)
       }
 
-      const res = await fetch("/api/recipes", {
-        method: "POST",
+      const url = editingId ? `/api/recipes?id=${editingId}` : "/api/recipes"
+      const method = editingId ? "PUT" : "POST"
+
+      const res = await fetch(url, {
+        method,
         headers: {
           "Content-Type": "application/json",
           "Authorization": `Basic ${credentials}`
@@ -95,15 +136,13 @@ export default function AdminRicettePage() {
 
       if (res.ok) {
         setShowAddForm(false)
-        setNewRecipe({
-          title: "", category: "Antipasti", description: "", image: "",
-          ingredients: "", steps: "", difficulty: "Facile", prepTime: "", servings: 4
-        })
-        showSuccess("Ricetta aggiunta con successo!")
+        setNewRecipe(emptyRecipe)
+        setEditingId(null)
+        showSuccess(editingId ? "Ricetta modificata con successo!" : "Ricetta aggiunta con successo!")
         fetchRecipes()
       }
     } catch (error) {
-      console.error("Error adding recipe:", error)
+      console.error("Error saving recipe:", error)
     }
   }
 
@@ -248,7 +287,7 @@ export default function AdminRicettePage() {
         <div className="flex justify-between items-center mb-8">
           <h2 className="font-serif text-2xl font-bold">Le tue ricette</h2>
           <button
-            onClick={() => setShowAddForm(true)}
+            onClick={openAddForm}
             className="flex items-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-medium transition-colors shadow-md"
           >
             <Plus className="w-4 h-4" />
@@ -275,13 +314,13 @@ export default function AdminRicettePage() {
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="font-serif text-2xl font-bold">Nuova Ricetta</h3>
+                  <h3 className="font-serif text-2xl font-bold">{editingId ? "Modifica Ricetta" : "Nuova Ricetta"}</h3>
                   <button onClick={() => setShowAddForm(false)} className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200">
                     <X className="w-4 h-4" />
                   </button>
                 </div>
 
-                <form onSubmit={handleAddRecipe} className="space-y-4">
+                <form onSubmit={handleSaveRecipe} className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-600 mb-1">Titolo *</label>
@@ -306,7 +345,7 @@ export default function AdminRicettePage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-600 mb-1">Descrizione *</label>
+                    <label className="block text-sm font-medium text-gray-600 mb-1">Descrizione Breve *</label>
                     <textarea
                       value={newRecipe.description}
                       onChange={(e) => setNewRecipe({ ...newRecipe, description: e.target.value })}
@@ -317,15 +356,37 @@ export default function AdminRicettePage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-gray-600 mb-1">URL Immagine *</label>
-                    <input
-                      type="url"
-                      value={newRecipe.image}
-                      onChange={(e) => setNewRecipe({ ...newRecipe, image: e.target.value })}
-                      placeholder="https://images.unsplash.com/..."
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                      required
+                    <label className="block text-sm font-medium text-gray-600 mb-1">Descrizione Lunga (SEO, opzionale)</label>
+                    <textarea
+                      value={newRecipe.longDescription}
+                      onChange={(e) => setNewRecipe({ ...newRecipe, longDescription: e.target.value })}
+                      rows={4}
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 resize-none"
                     />
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-600 mb-1">URL Immagine *</label>
+                      <input
+                        type="url"
+                        value={newRecipe.image}
+                        onChange={(e) => setNewRecipe({ ...newRecipe, image: e.target.value })}
+                        placeholder="https://images.unsplash.com/..."
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-600 mb-1">Autore</label>
+                      <input
+                        type="text"
+                        value={newRecipe.author}
+                        onChange={(e) => setNewRecipe({ ...newRecipe, author: e.target.value })}
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                        placeholder="es. Arcobaleno Senza Glutine"
+                      />
+                    </div>
                   </div>
 
                   <div className="grid grid-cols-3 gap-4">
@@ -387,12 +448,25 @@ export default function AdminRicettePage() {
                     />
                   </div>
 
+                  <div className="flex items-center gap-3 bg-gray-50 px-4 py-3 rounded-xl border border-gray-100 mt-2">
+                    <input
+                      type="checkbox"
+                      id="isVisible"
+                      checked={newRecipe.isVisible}
+                      onChange={(e) => setNewRecipe({ ...newRecipe, isVisible: e.target.checked })}
+                      className="w-5 h-5 text-emerald-600 rounded focus:ring-emerald-500 border-gray-300"
+                    />
+                    <label htmlFor="isVisible" className="text-sm font-medium text-gray-700 cursor-pointer select-none w-full">
+                      Rendi questa ricetta visibile sul sito
+                    </label>
+                  </div>
+
                   <button
                     type="submit"
                     className="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-xl font-medium transition-colors flex items-center justify-center gap-2"
                   >
                     <Save className="w-4 h-4" />
-                    Salva Ricetta
+                    {editingId ? "Salva Modifiche" : "Salva Ricetta"}
                   </button>
                 </form>
               </motion.div>
@@ -428,8 +502,11 @@ export default function AdminRicettePage() {
                         </div>
                         <div className="flex-1 p-4 flex items-center justify-between min-w-0">
                           <div className="min-w-0">
-                            <h4 className="font-medium text-sm truncate">{recipe.title}</h4>
-                            <p className="text-xs text-gray-400 mt-0.5">{recipe.prepTime} · {recipe.difficulty}</p>
+                            <h4 className={`font-medium text-sm truncate ${recipe.isVisible === false ? 'text-gray-400 line-through' : ''}`}>{recipe.title}</h4>
+                            <p className="text-xs text-gray-400 mt-0.5">
+                              {recipe.prepTime} · {recipe.difficulty}
+                              {recipe.isVisible === false && <span className="text-amber-500 ml-2 font-medium">Bozza (Nascosta)</span>}
+                            </p>
                           </div>
 
                           {deleteConfirm === recipe.id ? (
@@ -448,12 +525,21 @@ export default function AdminRicettePage() {
                               </button>
                             </div>
                           ) : (
-                            <button
-                              onClick={() => setDeleteConfirm(recipe.id)}
-                              className="p-2 text-gray-300 hover:text-red-500 transition-colors shrink-0 ml-2"
-                            >
-                              <Trash2 className="w-4 h-4" />
-                            </button>
+                            <div className="flex items-center gap-1 shrink-0 ml-2">
+                              <button
+                                onClick={() => openEditForm(recipe)}
+                                className="p-2 text-gray-400 hover:text-emerald-600 transition-colors"
+                              >
+                                {/* We will use a simple text or SVG since lucide icons imports might be strict */}
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+                              </button>
+                              <button
+                                onClick={() => setDeleteConfirm(recipe.id)}
+                                className="p-2 text-gray-300 hover:text-red-500 transition-colors"
+                              >
+                                <Trash2 className="w-4 h-4" />
+                              </button>
+                            </div>
                           )}
                         </div>
                       </div>

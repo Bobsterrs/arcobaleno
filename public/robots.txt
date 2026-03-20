@@ -1,12 +1,6 @@
-# Robots.txt - Arcobaleno Senza Glutine
-# https://www.arcobalenosenzaglutine.it
-
 User-agent: *
 Allow: /
-
-# Disallow internal/build paths
 Disallow: /api/
 Disallow: /_next/
 
-# Sitemap
 Sitemap: https://www.arcobalenosenzaglutine.it/sitemap.xml

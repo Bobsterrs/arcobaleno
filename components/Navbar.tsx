@@ -53,6 +53,7 @@ export function Navbar() {
     { label: "Dicono di Noi", id: "recensioni" },
     { label: "Prodotti", id: "novita" },
     { label: "Ricette", id: "ricette", isPage: true },
+    { label: "FAQ", id: "faq", isPage: true },
     { label: "Calcola Buono", id: "calcolatore" },
     { label: "Dove Trovarci", id: "dove-siamo" }
   ];
