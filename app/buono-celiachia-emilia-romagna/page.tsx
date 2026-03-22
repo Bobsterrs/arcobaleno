@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, HelpCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Buono Celiachia Emilia-Romagna: Importi 2026 e Come Usarlo',
-  description: 'Scopri a quanto ammonta il tuo buono celiachia mensile in Emilia-Romagna. Usa il nostro calcolatore e scopri come spenderlo da Arcobaleno Senza Glutine.',
+  description: 'Scopri gli importi 2026 del buono celiachia in Emilia-Romagna. Calcola il tuo budget mensile per fascia d\'età. Spendibile da Arcobaleno a Casalfiumanese.',
   alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/buono-celiachia-emilia-romagna' },
 }
 

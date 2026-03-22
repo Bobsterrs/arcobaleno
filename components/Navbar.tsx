@@ -54,7 +54,7 @@ export function Navbar() {
     { label: "Prodotti", id: "novita" },
     { label: "Ricette", id: "ricette", isPage: true },
     { label: "FAQ", id: "faq", isPage: true },
-    { label: "Calcola Buono", id: "calcolatore" },
+    { label: "Calcola Buono", id: "buono-celiachia-emilia-romagna", isPage: true },
     { label: "Dove Trovarci", id: "dove-siamo" }
   ];
 

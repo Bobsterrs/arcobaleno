@@ -4,9 +4,11 @@ import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { Plus, Minus, ArrowRight, HelpCircle } from 'lucide-react'
 
+import { FaqJsonLd } from '@/components/seo/FaqJsonLd'
+
 export const metadata: Metadata = {
-  title: 'FAQ Celiachia e Buono ASL Emilia Romagna | Arcobaleno',
-  description: 'Le domande più frequenti sulla celiachia, sui prodotti senza glutine e su come spendere i buoni ASL della Regione Emilia Romagna tramite Tessera Sanitaria.',
+  title: 'FAQ Celiachia e Buono ASL Emilia Romagna',
+  description: 'Tutto sulla celiachia, il buono ASL ER e come fare la spesa senza glutine a Imola e dintorni. 20 risposte dal negozio specializzato di Casalfiumanese.',
   alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/faq' },
 }
 
@@ -97,6 +99,7 @@ export default function FAQPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
       <Navbar />
+      <FaqJsonLd faqs={faqs} />
 
       <main className="flex-grow pt-28 pb-20">
         <section className="bg-emerald-900 text-white py-16 md:py-24 relative overflow-hidden mb-16">
@@ -160,25 +163,6 @@ export default function FAQPage() {
           </div>
         </section>
       </main>
-
-      {/* SEO FAQ Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer.replace(/<[^>]*>?/gm, '') // Remove HTML tags for Schema
-              }
-            }))
-          })
-        }}
-      />
 
       <Footer />
     </div>

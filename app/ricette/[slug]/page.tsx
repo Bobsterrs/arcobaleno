@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!recipe) return { title: 'Ricetta non trovata' }
 
   return {
-    title: `${recipe.title} Senza Glutine — Ricetta Facile | Arcobaleno`,
-    description: `Ricetta ${recipe.title} senza glutine, semplice e gustosa. Pronta in ${recipe.prepTime}. Testata e approvata da Arcobaleno Senza Glutine.`,
+    title: `${recipe.title} Senza Glutine — Ricetta Facile`,
+    description: `Ricetta ${recipe.title} senza glutine, semplice e gustosa. Pronta in ${recipe.prepTime} minuti. Testata da Arcobaleno Senza Glutine a Casalfiumanese.`,
     alternates: { canonical: `https://www.arcobalenosenzaglutine.it/ricette/${slug}` },
   }
 }

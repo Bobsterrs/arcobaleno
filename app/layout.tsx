@@ -22,8 +22,8 @@ const siteUrl = "https://www.arcobalenosenzaglutine.it";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Arcobaleno Senza Glutine | Negozio Prodotti per Celiaci Imola",
-    template: "%s | Arcobaleno Senza Glutine"
+    template: '%s | Arcobaleno Senza Glutine',
+    default: 'Negozio Senza Glutine Imola | Arcobaleno Senza Glutine — Casalfiumanese',
   },
   description: "Il miglior negozio di prodotti senza glutine a Casalfiumanese, vicino a Imola. Pane fresco, dolci artigianali, prodotti per celiaci e consulenza esperta. Vieni a trovarci!",
   keywords: [
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     images: ["/img/locale.jpeg"]
   },
   alternates: {
-    canonical: "/"
+    canonical: "/",
   },
   other: {
     "geo.region": "IT-BO",
@@ -94,8 +94,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${merriweather.variable} antialiased`}
       >
-        <LocalBusinessSchema />
-        <SectionSchemas />
         {children}
       </body>
     </html>

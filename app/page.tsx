@@ -1,12 +1,18 @@
 import { Metadata } from "next"
 import HomeClient from "./HomeClient"
+import { LocalBusinessJsonLd } from '@/components/seo/LocalBusinessJsonLd'
 
 export const metadata: Metadata = {
-  title: 'Arcobaleno Senza Glutine — Casalfiumanese',
-  description: 'Negozio specializzato senza glutine a Casalfiumanese, a 10 minuti da Imola. Selezioniamo solo prodotti che amiamo davvero. Pane fresco, farine e buono celiachia.',
+  title: 'Negozio Senza Glutine Imola | Arcobaleno — Casalfiumanese',
+  description: 'Negozio specializzato senza glutine a Casalfiumanese, a 10 minuti da Imola. Pane fresco, prodotti mutuabili, buono ASL. Accettiamo Tessera Sanitaria.',
   alternates: { canonical: 'https://www.arcobalenosenzaglutine.it' },
 }
 
 export default function Home() {
-  return <HomeClient />
+  return (
+    <>
+      <LocalBusinessJsonLd />
+      <HomeClient />
+    </>
+  )
 }
