@@ -6,7 +6,7 @@ import { Plus, Minus, ArrowRight, HelpCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'FAQ Celiachia e Buono ASL Emilia Romagna | Arcobaleno',
-  description: 'Le 10 domande più frequenti sulla celiachia, sui prodotti senza glutine e su come spendere i buoni ASL della Regione Emilia Romagna tramite Tessera Sanitaria.',
+  description: 'Le domande più frequenti sulla celiachia, sui prodotti senza glutine e su come spendere i buoni ASL della Regione Emilia Romagna tramite Tessera Sanitaria.',
   alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/faq' },
 }
 

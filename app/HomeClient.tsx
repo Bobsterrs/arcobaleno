@@ -535,7 +535,7 @@ export default function Home() {
                   Senza Glutine, <br />con tutto il gusto.
                 </h2>
                 <p className="text-emerald-100/80 font-light leading-relaxed text-lg mb-8">
-                  Scopri oltre 30 ricette testate e approvate: antipasti, primi piatti, secondi, contorni, dolci e tanto altro. Piatti semplici, genuini e buonissimi pensati per chi vive senza glutine.
+                  Entra a far parte della nostra community e scopri oltre 30 ricette testate e approvate: antipasti, primi piatti, secondi, contorni, dolci e tanto altro. Piatti semplici, genuini e buonissimi pensati da chi vive il senza glutine ogni giorno.
                 </p>
                 <a
                   href="/ricette"
@@ -574,7 +574,7 @@ export default function Home() {
                 Tutto sulla Celiachia e i Buoni ASL
               </h2>
               <p className="text-lg text-gray-600 font-light mb-10 leading-relaxed">
-                Abbiamo raccolto e risposto alle 10 domande più frequenti. Scopri come attivare il buono in Emilia Romagna, cosa puoi acquistare con la Tessera Sanitaria e le disponibilità del nostro fresco artigianale.
+                Abbiamo raccolto e risposto alle domande più frequenti della nostra community. Scopri come attivare il buono in Emilia Romagna, cosa puoi acquistare con la Tessera Sanitaria e le disponibilità del nostro fresco artigianale.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <a
