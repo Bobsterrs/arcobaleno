@@ -8,7 +8,7 @@ import { FaqJsonLd } from '@/components/seo/FaqJsonLd'
 
 export const metadata: Metadata = {
   title: 'FAQ Celiachia e Buono ASL Emilia Romagna',
-  description: 'Tutto sulla celiachia, il buono ASL ER e come fare la spesa senza glutine a Imola e dintorni. 20 risposte dal negozio specializzato di Casalfiumanese.',
+  description: 'Tutto sulla celiachia, il buono ASL ER e come fare la spesa senza glutine a Casalfiumanese e dintorni (Imola e Vallata). 20 risposte dal negozio specializzato.',
   alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/faq' },
 }
 
@@ -90,8 +90,8 @@ const faqs = [
     answer: "Siamo aperti dal lunedì al sabato (giorno di chiusura: martedì) dalle 09:30 alle 13:00 e dalle 15:30 alle 19:30. Se vieni da più lontano (ad esempio da Castel San Pietro, Faenza o Bologna) ti consigliamo di contattarci per farti mettere da parte i tuoi prodotti preferiti o i dolci freschi di giornata!"
   },
   {
-    question: "Effettuate la consegna a domicilio di prodotti senza glutine a Imola e dintorni?",
-    answer: "Sì, offriamo un comodissimo servizio di consegna a domicilio per Imola e zone limitrofe, coprendo anche tutta la suggestiva Vallata del Santerno (Casalfiumanese, Fontanelice, Borgo Tossignano e Castel del Rio). Contattaci via telefono o WhatsApp per concordare la tua consegna di pane fresco e prodotti per celiaci direttamente a casa tua!"
+    question: "Effettuate la consegna a domicilio di prodotti senza glutine a Casalfiumanese e Imola?",
+    answer: "Sì, offriamo un servizio di consegna a domicilio per Casalfiumanese, Imola e tutta la Vallata del Santerno (Fontanelice, Borgo Tossignano e Castel del Rio). Contattaci via WhatsApp per concordare la tua consegna di pane fresco e prodotti per celiaci!"
   }
 ]
 

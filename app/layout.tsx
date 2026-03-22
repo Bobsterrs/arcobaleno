@@ -23,14 +23,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     template: '%s | Arcobaleno Senza Glutine',
-    default: 'Negozio Senza Glutine Imola | Arcobaleno Senza Glutine — Casalfiumanese',
+    default: 'Negozio Senza Glutine Casalfiumanese | Arcobaleno — 10 min da Imola',
   },
-  description: "Il miglior negozio di prodotti senza glutine a Casalfiumanese, vicino a Imola. Pane fresco, dolci artigianali, prodotti per celiaci e consulenza esperta. Vieni a trovarci!",
+  description: "Il miglior negozio di prodotti senza glutine a Casalfiumanese. Pane fresco, dolci artigianali e i migliori marchi per celiaci a soli 10 minuti da Imola.",
   keywords: [
     "Senza Glutine",
     "Celiachia",
     "Prodotti Freschi",
-    "Negozio Celiaci Imola",
+    "Negozio Celiaci Casalfiumanese",
     "Pane Senza Glutine",
     "Dolci Senza Glutine",
     "Arcobaleno Senza Glutine",
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arcobaleno Senza Glutine | Negozio Prodotti per Celiaci Imola",
-    description: "Prodotti freschi e artigianali senza glutine. Ti aspettiamo a Casalfiumanese, Imola.",
+    title: "Arcobaleno Senza Glutine | Negozio Prodotti per Celiaci Casalfiumanese",
+    description: "Prodotti freschi e artigianali senza glutine. Ti aspettiamo a Casalfiumanese, a 10 minuti da Imola.",
     images: ["/img/locale.jpeg"]
   },
   alternates: {

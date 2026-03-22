@@ -3,7 +3,7 @@ export function LocalBusinessJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Arcobaleno Senza Glutine',
-    description: 'Negozio specializzato in prodotti senza glutine per celiaci a Casalfiumanese, 10 minuti da Imola.',
+    description: 'Negozio specializzato in prodotti senza glutine per celiaci a Casalfiumanese, a soli 10 minuti da Imola.',
     url: 'https://www.arcobalenosenzaglutine.it',
     telephone: '+393884043388',
     image: 'https://www.arcobalenosenzaglutine.it/logo.png',
