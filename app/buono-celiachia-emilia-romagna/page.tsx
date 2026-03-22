@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle2, ShieldCheck, HelpCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Buono Celiachia Emilia-Romagna: Importi 2026 e Come Usarlo',
-  description: 'Scopri gli importi 2026 del buono celiachia in Emilia-Romagna. Calcola il tuo budget mensile per fascia d\'età. Spendibile da Arcobaleno a Casalfiumanese.',
+  description: 'Scopri gli importi 2026 del buono celiachia in Emilia-Romagna. Calcola il tuo budget mensile per fascia d\'età. Spendibile da Arcobaleno Senza Glutine a Casalfiumanese, vicino a Imola.',
   alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/buono-celiachia-emilia-romagna' },
 }
 
@@ -109,61 +109,6 @@ export default function BuonoCeliachiaPage() {
         </div>
       </main>
 
-      {/* SEO Breadcrumb Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.arcobalenosenzaglutine.it"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Buono Celiachia Emilia-Romagna",
-                "item": "https://www.arcobalenosenzaglutine.it/buono-celiachia-emilia-romagna"
-              }
-            ]
-          })
-        }}
-      />
-
-      {/* FAQ Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "I buoni per celiaci sono cumulabili da un mese all'altro in Emilia Romagna?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "No, il buono celiachia non è cumulabile. L'importo non speso entro l'ultimo giorno del mese solare viene azzerato e non si somma al budget del mese successivo."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Dove posso spendere il buono celiachia?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "In Emilia Romagna puoi spendere il tuo buono utilizzando la Tessera Sanitaria presso negozi specializzati convenzionati come Arcobaleno Senza Glutine a Casalfiumanese, oltre a farmacie e grande distribuzione."
-                }
-              }
-            ]
-          })
-        }}
-      />
-
-      <Footer />
     </div>
   )
 }

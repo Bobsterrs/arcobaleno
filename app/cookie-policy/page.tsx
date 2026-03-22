@@ -5,8 +5,11 @@ import CookiePolicyClient from "./CookiePolicyClient";
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
-  description: 'Informativa sui cookie di Arcobaleno Senza Glutine. Scopri come utilizziamo i cookie sul nostro sito.',
-  alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/cookie-policy' },
+  description: 'Informativa sui cookie di Arcobaleno Senza Glutine di Casalfiumanese. Scopri come utilizziamo i cookie.',
+  robots: {
+    index: false,
+    follow: true,
+  },
 }
 
 export default function CookiePolicy() {

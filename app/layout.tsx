@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Merriweather } from "next/font/google";
 import "./globals.css";
-import { LocalBusinessSchema } from "@/components/LocalBusinessSchema";
-import { SectionSchemas } from "@/components/SectionSchemas";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     template: '%s | Arcobaleno Senza Glutine',
-    default: 'Negozio Senza Glutine Casalfiumanese | Arcobaleno — 10 min da Imola',
+    default: 'Negozio Senza Glutine a Imola | Arcobaleno — Casalfiumanese',
   },
   description: "Il miglior negozio di prodotti senza glutine a Casalfiumanese. Pane fresco, dolci artigianali e i migliori marchi per celiaci a soli 10 minuti da Imola.",
   keywords: [
@@ -57,10 +55,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/img/locale.jpeg",
+        url: "/img/og-default.jpg",
         width: 1200,
         height: 630,
-        alt: "Arcobaleno Senza Glutine - Negozio Specializzato Senza Glutine"
+        alt: "Arcobaleno Senza Glutine — Negozio per celiaci a Casalfiumanese, vicino a Imola"
       }
     ]
   },

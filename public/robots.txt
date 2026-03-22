@@ -3,4 +3,8 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
+# Pagine da non indicizzare
+Disallow: /privacy-policy
+Disallow: /cookie-policy
+
 Sitemap: https://www.arcobalenosenzaglutine.it/sitemap.xml

@@ -3,7 +3,7 @@ import RicetteClient from "./RicetteClient"
 
 export const metadata: Metadata = {
   title: 'Ricette Senza Glutine Facili e Gustose',
-  description: 'Oltre 30 ricette senza glutine semplici e collaudate: antipasti, primi, dolci e molto altro. Pensate da chi vive la celiachia ogni giorno.',
+  description: 'Oltre 30 ricette senza glutine collaudate: antipasti, primi, dolci e molto altro. Pensate da chi vive la celiachia ogni giorno a Casalfiumanese.',
   alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/ricette' },
 }
 

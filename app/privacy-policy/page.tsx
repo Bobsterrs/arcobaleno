@@ -5,8 +5,11 @@ import PrivacyPolicyClient from "./PrivacyPolicyClient";
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Informativa sulla privacy di Arcobaleno Senza Glutine. Come raccogliamo e trattiamo i tuoi dati personali.',
-  alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/privacy-policy' },
+  description: 'Informativa sulla privacy di Arcobaleno Senza Glutine di Casalfiumanese. Come raccogliamo e trattiamo i tuoi dati.',
+  robots: {
+    index: false,
+    follow: true,
+  },
 }
 
 export default function PrivacyPolicy() {

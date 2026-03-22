@@ -92,7 +92,7 @@ export const SectionSchemas = () => {
       { "@type": "ListItem", "position": 4, "name": "Perché Noi", "item": `${baseUrl}/#perche-noi` },
       { "@type": "ListItem", "position": 5, "name": "Dicono di Noi", "item": `${baseUrl}/#recensioni` },
       { "@type": "ListItem", "position": 6, "name": "Prodotti", "item": `${baseUrl}/#novita` },
-      { "@type": "ListItem", "position": 7, "name": "Calcola Buono", "item": `${baseUrl}/#calcolatore` },
+      { "@type": "ListItem", "position": 7, "name": "Calcola Buono", "item": `${baseUrl}/buono-celiachia-emilia-romagna` },
       { "@type": "ListItem", "position": 8, "name": "Dove Trovarci", "item": `${baseUrl}/#dove-siamo` }
     ]
   };

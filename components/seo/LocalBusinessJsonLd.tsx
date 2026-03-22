@@ -18,8 +18,8 @@ export function LocalBusinessJsonLd() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 44.28,
-      longitude: 11.62,
+      latitude: 44.2805,
+      longitude: 11.6231,
     },
     openingHoursSpecification: [
       {
