@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     template: '%s | Arcobaleno Senza Glutine',
-    default: 'Negozio Senza Glutine a Imola | Arcobaleno — Casalfiumanese',
+    default: 'Arcobaleno Senza Glutine | Casalfiumanese',
   },
   description: "Il miglior negozio di prodotti senza glutine a Casalfiumanese. Pane fresco, dolci artigianali e i migliori marchi per celiaci a soli 10 minuti da Imola.",
   keywords: [

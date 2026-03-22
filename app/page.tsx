@@ -4,7 +4,7 @@ import { LocalBusinessJsonLd } from '@/components/seo/LocalBusinessJsonLd'
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Negozio Senza Glutine a Imola | Arcobaleno — Casalfiumanese',
+    absolute: 'Arcobaleno Senza Glutine | Casalfiumanese',
   },
   description: 'Negozio specializzato senza glutine a Casalfiumanese, a 10 minuti da Imola. Pane fresco, prodotti mutuabili, buono ASL. Accettiamo Tessera Sanitaria.',
   alternates: { canonical: 'https://www.arcobalenosenzaglutine.it' },
