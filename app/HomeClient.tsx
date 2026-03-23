@@ -72,7 +72,8 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
             >
-              A Casalfiumanese c'è l'Arcobaleno tutti i giorni
+              In Vallata c'è <br />
+              <span className="text-amber-400 text-shadow-glow">l'Arcobaleno</span> tutti i giorni
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, scale: 0.95 }}
