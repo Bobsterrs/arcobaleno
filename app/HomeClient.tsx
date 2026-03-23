@@ -72,8 +72,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
             >
-              Prodotti Senza Glutine, <br />
-              <span className="text-amber-400">Qualità Senza Compromessi.</span>
+              A Casalfiumanese c'è l'Arcobaleno tutti i giorni
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, scale: 0.95 }}
@@ -81,7 +80,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-2xl text-emerald-50 mb-10 max-w-2xl mx-auto font-light"
             >
-              A Casalfiumanese, a soli 10 minuti da Imola. Non scegliamo solo prodotti da vendere, scegliamo il gusto che vorremmo sulla nostra tavola.
+              Non scegliamo solo prodotti da vendere, scegliamo il gusto che vorremmo sulla nostra tavola.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
