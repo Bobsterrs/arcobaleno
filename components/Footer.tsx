@@ -61,7 +61,7 @@ export function Footer() {
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="/chi-siamo" className="hover:text-white transition-colors">Chi Siamo</Link>
             <Link href="/prodotti-senza-glutine" className="hover:text-white transition-colors">Prodotti</Link>
-            <Link href="/dove-siamo" className="hover:text-white transition-colors">Dove Siamo</Link>
+            <Link href="/dove-trovarci" className="hover:text-white transition-colors">Dove Siamo</Link>
             <Link href="/faq" className="hover:text-white transition-colors">FAQ</Link>
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
           </div>

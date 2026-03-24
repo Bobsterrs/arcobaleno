@@ -36,7 +36,7 @@ export function Navbar() {
     { label: "Prodotti", href: "/prodotti-senza-glutine" },
     { label: "Ricette", href: "/ricette" },
     { label: "FAQ", href: "/faq" },
-    { label: "Dove Trovarci", href: "/dove-siamo" }
+    { label: "Dove Trovarci", href: "/dove-trovarci" }
   ];
 
   const linkClass = "px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center"
@@ -85,12 +85,12 @@ export function Navbar() {
             </a>
           </div>
           
-          <Link href="/dove-siamo">
+          <Link href="/#newsletter">
             <Button 
               variant="secondary" 
               className="rounded-full shadow-md"
             >
-              Contattaci
+              Club Arcobaleno
             </Button>
           </Link>
         </div>
@@ -139,11 +139,13 @@ export function Navbar() {
                   </a>
                 </div>
 
-                <Link href="/dove-siamo" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button variant="secondary" className="w-full py-7 rounded-2xl shadow-lg text-lg">
-                    Contattaci ora
-                  </Button>
-                </Link>
+                <div className="pt-2">
+                  <Link href="/#newsletter" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Button variant="secondary" className="w-full py-7 rounded-2xl shadow-lg text-lg">
+                      Iscriviti al Club
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </motion.div>

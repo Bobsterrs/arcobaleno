@@ -195,7 +195,7 @@ export default function Home() {
                   whileInView={{ opacity: 1, x: 0, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.7, delay: i * 0.3 }}
-                  className="bg-gray-50 rounded-2xl p-8 text-center hover:bg-emerald-50 border border-transparent hover:border-emerald-100 transition-all hover:scale-105 duration-300 shadow-sm"
+                  className="bg-gray-50 rounded-2xl p-8 text-center hover:bg-emerald-50 border border-transparent hover:border-emerald-100 transition-all hover:scale-105 duration-300 shadow-sm aspect-square flex flex-col items-center justify-center"
                 >
                   <div className="mx-auto bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm mb-6">
                     {feature.icon}
@@ -209,7 +209,7 @@ export default function Home() {
         </section>
 
         {/* 3. Why Us (vs Competitor) */}
-        <section className="relative md:sticky top-0 z-40 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
+        <section className="relative md:sticky top-0 z-40 min-h-screen w-full flex flex-col justify-center bg-emerald-50 overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.05)] pt-32 pb-20">
           <div className="container mx-auto px-4 md:px-6 relative z-10 py-24 md:py-20">
             <motion.div {...fadeIn} className="text-center mb-16 max-w-3xl mx-auto">
               <span className="text-emerald-600 font-semibold tracking-wider text-sm uppercase mb-4 block">Perché Sceglierci</span>
@@ -220,7 +220,7 @@ export default function Home() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
               {[
                 {
                   title: "Selezione Rigorosa",
@@ -249,13 +249,13 @@ export default function Home() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="bg-gray-50 rounded-[2rem] p-8 text-center hover:bg-emerald-50 border border-transparent hover:border-emerald-100 transition-all hover:shadow-xl duration-300 group"
+                  className="bg-gray-50 rounded-2xl p-8 text-center hover:bg-emerald-50 border border-transparent hover:border-emerald-100 transition-all hover:scale-105 duration-300 shadow-sm aspect-square flex flex-col items-center justify-center group"
                 >
                   <div className="mx-auto bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm mb-6 group-hover:scale-110 transition-transform">
                     {card.icon}
                   </div>
                   <h3 className="font-serif text-xl font-bold mb-3 text-foreground">{card.title}</h3>
-                  <p className="text-gray-600 font-light leading-relaxed text-sm">{card.desc}</p>
+                  <p className="text-gray-600 font-light leading-relaxed">{card.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -427,7 +427,7 @@ export default function Home() {
                 <Button
                   className="bg-white text-emerald-900 border border-emerald-100 hover:bg-gray-50 px-8 py-6 h-auto text-lg rounded-full shadow-md transition-all duration-300 group inline-flex items-center"
                 >
-                  <span>Sfoglia il catalogo completo</span>
+                  <span className="text-emerald-900">Sfoglia il catalogo completo</span>
                   <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -595,7 +595,7 @@ export default function Home() {
         </section>
 
         {/* 5. Newsletter / Lead Magnet */}
-        <section className="relative md:sticky top-0 z-90 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+        <section id="newsletter" className="relative md:sticky top-0 z-90 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
 
           <div className="container mx-auto px-4 md:px-6 py-24 md:py-20">
             <motion.div
