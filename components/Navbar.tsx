@@ -29,33 +29,14 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const navigateToSection = (e: React.MouseEvent | React.TouchEvent, id: string) => {
-    e.preventDefault();
-    if (isHomePage) {
-      // On homepage: smooth scroll to the section
-      const element = document.getElementById(id);
-      if (element) {
-        window.scrollTo({
-          top: element.offsetTop,
-          behavior: 'smooth'
-        });
-      }
-    } else {
-      // On other pages: navigate to homepage with hash
-      router.push(`/#${id}`);
-    }
-  };
 
   const navItems = [
-    { label: "Chi Siamo", id: "chi-siamo" },
-    { label: "Il Metodo", id: "esperienza" },
-    { label: "Perché Noi", id: "perche-noi" },
-    { label: "Dicono di Noi", id: "recensioni" },
-    { label: "Prodotti", id: "novita" },
-    { label: "Ricette", id: "ricette", isPage: true },
-    { label: "FAQ", id: "faq", isPage: true },
-    { label: "Calcola Buono", id: "buono-celiachia-emilia-romagna", isPage: true },
-    { label: "Dove Trovarci", id: "dove-siamo" }
+    { label: "Chi Siamo", href: "/chi-siamo" },
+    { label: "Il Metodo", href: "/metodo-arcobaleno" },
+    { label: "Prodotti", href: "/prodotti-senza-glutine" },
+    { label: "Ricette", href: "/ricette" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Dove Trovarci", href: "/dove-siamo" }
   ];
 
   const linkClass = "px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center"
@@ -84,15 +65,9 @@ export function Navbar() {
         {/* Desktop Nav Links */}
         <nav className="hidden lg:flex items-center justify-center space-x-2 flex-1 px-2">
           {navItems.map((item) => (
-            item.isPage ? (
-              <Link key={item.id} href={`/${item.id}`} className={linkClass}>
-                {item.label}
-              </Link>
-            ) : (
-              <a key={item.id} href={`/#${item.id}`} onClick={(e) => navigateToSection(e, item.id)} className={linkClass}>
-                {item.label}
-              </a>
-            )
+            <Link key={item.href} href={item.href} className={linkClass}>
+              {item.label}
+            </Link>
           ))}
         </nav>
 
@@ -110,13 +85,14 @@ export function Navbar() {
             </a>
           </div>
           
-          <Button 
-            variant="secondary" 
-            className="rounded-full shadow-md" 
-            onClick={(e) => navigateToSection(e, 'newsletter')}
-          >
-            Iscriviti
-          </Button>
+          <Link href="/dove-siamo">
+            <Button 
+              variant="secondary" 
+              className="rounded-full shadow-md"
+            >
+              Contattaci
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -138,30 +114,17 @@ export function Navbar() {
             className="lg:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-xl rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 max-h-[80vh] flex flex-col"
           >
             <div className="overflow-y-auto py-6 px-8 space-y-2 scrollbar-hide">
-              {navItems.map((item) => (
-                item.isPage ? (
+                {navItems.map((item) => (
                   <Link
-                    key={item.id}
-                    href={`/${item.id}`}
+                    key={item.href}
+                    href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className={mobileLinkClass}
+                    className="flex items-center justify-between p-4 rounded-2xl bg-gray-50 text-foreground font-medium hover:bg-emerald-50 hover:text-emerald-600 transition-all group"
                   >
                     {item.label}
+                    <ArrowRight className="w-5 h-5 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                   </Link>
-                ) : (
-                  <a 
-                    key={item.id}
-                    href={`/#${item.id}`}
-                    onClick={(e) => {
-                      setIsMobileMenuOpen(false);
-                      navigateToSection(e, item.id);
-                    }}
-                    className={mobileLinkClass}
-                  >
-                    {item.label}
-                  </a>
-                )
-              ))}
+                ))}
               
               <div className="pt-6">
                 <div className="flex space-x-4 mb-6">
@@ -176,12 +139,11 @@ export function Navbar() {
                   </a>
                 </div>
 
-                <Button variant="secondary" className="w-full py-7 rounded-2xl shadow-lg text-lg" onClick={(e) => {
-                  setIsMobileMenuOpen(false);
-                  navigateToSection(e, 'newsletter');
-                }}>
-                  Iscriviti alla Newsletter
-                </Button>
+                <Link href="/dove-siamo" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button variant="secondary" className="w-full py-7 rounded-2xl shadow-lg text-lg">
+                    Contattaci ora
+                  </Button>
+                </Link>
               </div>
             </div>
           </motion.div>

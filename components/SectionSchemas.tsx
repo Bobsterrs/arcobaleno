@@ -48,7 +48,7 @@ export const SectionSchemas = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Arcobaleno Senza Glutine",
-    "@id": `${baseUrl}/#reviews`,
+    "@id": `${baseUrl}`,
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
@@ -87,13 +87,13 @@ export const SectionSchemas = () => {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": baseUrl },
-      { "@type": "ListItem", "position": 2, "name": "Chi Siamo", "item": `${baseUrl}/#chi-siamo` },
-      { "@type": "ListItem", "position": 3, "name": "Il Metodo", "item": `${baseUrl}/#esperienza` },
-      { "@type": "ListItem", "position": 4, "name": "Perché Noi", "item": `${baseUrl}/#perche-noi` },
-      { "@type": "ListItem", "position": 5, "name": "Dicono di Noi", "item": `${baseUrl}/#recensioni` },
-      { "@type": "ListItem", "position": 6, "name": "Prodotti", "item": `${baseUrl}/#novita` },
+      { "@type": "ListItem", "position": 2, "name": "Chi Siamo", "item": `${baseUrl}/chi-siamo` },
+      { "@type": "ListItem", "position": 3, "name": "Il Metodo", "item": `${baseUrl}/metodo-arcobaleno` },
+      { "@type": "ListItem", "position": 4, "name": "Prodotti", "item": `${baseUrl}/prodotti-senza-glutine` },
+      { "@type": "ListItem", "position": 5, "name": "Ricette", "item": `${baseUrl}/ricette` },
+      { "@type": "ListItem", "position": 6, "name": "FAQ", "item": `${baseUrl}/faq` },
       { "@type": "ListItem", "position": 7, "name": "Calcola Buono", "item": `${baseUrl}/buono-celiachia-emilia-romagna` },
-      { "@type": "ListItem", "position": 8, "name": "Dove Trovarci", "item": `${baseUrl}/#dove-siamo` }
+      { "@type": "ListItem", "position": 8, "name": "Dove Siamo", "item": `${baseUrl}/dove-siamo` }
     ]
   };
 

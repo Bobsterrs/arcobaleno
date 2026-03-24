@@ -2,6 +2,7 @@
 
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
+import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import { motion, AnimatePresence } from "framer-motion"
 import { Heart, Search, ShieldCheck, Star, ArrowRight, CheckCircle2, ShoppingBag, Instagram, Calculator, Phone, MapPin, Clock, MessageCircle, HelpCircle } from "lucide-react"
@@ -88,9 +89,11 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Button size="lg" variant="secondary" className="shadow-lg hover:shadow-xl text-lg px-10" onClick={() => document.getElementById('chi-siamo')?.scrollIntoView({ behavior: 'smooth' })}>
-                Scopri di più
-              </Button>
+              <Link href="/chi-siamo">
+                <Button size="lg" variant="secondary" className="shadow-lg hover:shadow-xl text-lg px-10">
+                  Scopri di più
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </section>
@@ -140,9 +143,11 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="mt-10">
-                  <Button variant="outline" onClick={() => document.getElementById('esperienza')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Continua a scoprire <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
+                  <Link href="/metodo-arcobaleno">
+                    <Button variant="outline">
+                      Continua a scoprire <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </Link>
                 </div>
               </motion.div>
             </div>
@@ -204,7 +209,6 @@ export default function Home() {
         </section>
 
         {/* 3. Why Us (vs Competitor) */}
-        <div id="perche-noi" />
         <section className="relative md:sticky top-0 z-40 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-emerald-900 text-white overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
 
           <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-800 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
@@ -264,11 +268,17 @@ export default function Home() {
                 </motion.div>
               ))}
             </div>
+            <div className="mt-12 text-center">
+              <Link href="/metodo-arcobaleno">
+                <Button variant="outline" className="border-emerald-400 text-emerald-300 hover:bg-emerald-800 rounded-full px-8">
+                  Scopri il Metodo Arcobaleno <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
 
         {/* 3. Dicono di Noi (Reviews Carousel) */}
-        <div id="recensioni" />
         <section className="relative md:sticky top-0 z-50 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
           <div className="container mx-auto px-4 md:px-6 py-24 md:py-20">
             <motion.div {...fadeIn} className="text-center mb-16">
@@ -362,7 +372,6 @@ export default function Home() {
         </section>
 
         {/* 4. Social Proof / Dynamic Grid */}
-        <div id="novita" />
         <section className="relative z-60 w-full flex flex-col justify-center bg-gray-50 shadow-[0_-10px_40px_rgba(0,0,0,0.08)] py-24 md:py-32">
           <div className="container mx-auto px-4 md:px-6">
             <motion.div {...fadeIn} className="text-center mb-16">
@@ -422,21 +431,27 @@ export default function Home() {
               ))}
             </div>
 
-            <motion.div {...fadeIn} className="text-center mt-12">
+            <motion.div {...fadeIn} className="text-center mt-12 flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/prodotti-senza-glutine">
+                <Button
+                  className="bg-white text-emerald-900 border border-emerald-100 hover:bg-gray-50 px-8 py-6 h-auto text-lg rounded-full shadow-md transition-all duration-300 group inline-flex items-center"
+                >
+                  <span>Sfoglia il catalogo completo</span>
+                  <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <Button
                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-6 h-auto text-lg rounded-full shadow-lg hover:shadow-emerald-200 transition-all duration-300 group inline-flex items-center"
                 onClick={() => window.open('https://wa.me/393884043388', '_blank')}
               >
                 <MessageCircle className="mr-3 w-6 h-6 fill-current" />
-                <span>Chiedi disponibilità su WhatsApp</span>
-                <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <span>Chiedi su WhatsApp</span>
               </Button>
             </motion.div>
           </div>
         </section>
 
         {/* 2.5. Calcolatore Buono */}
-        <div id="calcolatore" />
         <section className="relative md:sticky top-0 z-70 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-amber-50 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
 
           <div className="container mx-auto px-4 md:px-6 py-24 md:py-20">
@@ -454,7 +469,6 @@ export default function Home() {
         </section>
 
         {/* 4.5. Dove Siamo (Map & Info) */}
-        <div id="dove-siamo" />
         <section className="relative md:sticky top-0 z-80 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
           <div className="container mx-auto px-4 md:px-6 py-24 md:py-20">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
@@ -537,13 +551,13 @@ export default function Home() {
                 <p className="text-emerald-100/80 font-light leading-relaxed text-lg mb-8">
                   Unisciti alla nostra community senza glutine: uno spazio di condivisione autentica per chi vive la celiachia ogni giorno. Scopri e proponi le tue ricette inclusive, nate dalla nostra esperienza diretta per condividere il piacere della tavola, dai primi piatti ai dolci artigianali. Insieme, trasformiamo il senza glutine in una passione comune.
                 </p>
-                <a
+                <Link
                   href="/ricette"
                   className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-emerald-900 font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg"
                 >
                   Esplora le Ricette
                   <ArrowRight className="w-5 h-5" />
-                </a>
+                </Link>
               </div>
               <div className="md:w-2/5 grid grid-cols-2 gap-3">
                 <div className="rounded-2xl overflow-hidden shadow-lg aspect-square relative">
@@ -577,20 +591,19 @@ export default function Home() {
                 Abbiamo raccolto e risposto alle domande più frequenti della nostra community. Scopri come attivare il buono in Emilia Romagna, cosa puoi acquistare con la Tessera Sanitaria e le disponibilità del nostro fresco artigianale.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <a
+                <Link
                   href="/faq"
                   className="inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg"
                 >
                   <HelpCircle className="w-5 h-5" />
                   Leggi le FAQ
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
         </section>
 
         {/* 5. Newsletter / Lead Magnet */}
-        <div id="newsletter" />
         <section className="relative md:sticky top-0 z-90 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
 
           <div className="container mx-auto px-4 md:px-6 py-24 md:py-20">

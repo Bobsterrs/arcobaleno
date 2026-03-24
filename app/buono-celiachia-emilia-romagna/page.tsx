@@ -89,7 +89,7 @@ export default function BuonoCeliachiaPage() {
                     <p className="text-gray-600 font-light mb-6 text-sm">
                       Da Arcobaleno Senza Glutine accettiamo la Tessera Sanitaria per l'acquisto di tutti i prodotti mutuabili inseriti nel Registro Nazionale.
                     </p>
-                    <Link href="/#dove-siamo" className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-3 rounded-full transition-all text-sm w-full justify-center">
+                    <Link href="/dove-siamo" className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-3 rounded-full transition-all text-sm w-full justify-center">
                       Vieni a trovarci <ArrowRight className="w-4 h-4" />
                     </Link>
                  </div>
