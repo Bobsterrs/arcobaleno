@@ -3,7 +3,7 @@ export function LocalBusinessJsonLd() {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Arcobaleno Senza Glutine',
-    description: 'Negozio specializzato in prodotti senza glutine per celiaci a Casalfiumanese, a soli 10 minuti da Imola.',
+    description: 'Negozio specializzato senza glutine a Casalfiumanese, a 10 minuti da Imola. Pane fresco, prodotti mutuabili, buono ASL. Accettiamo Tessera Sanitaria.',
     url: 'https://www.arcobalenosenzaglutine.it',
     telephone: '+393884043388',
     image: 'https://www.arcobalenosenzaglutine.it/logo.png',
@@ -44,6 +44,7 @@ export function LocalBusinessJsonLd() {
       { '@type': 'City', name: 'Castel San Pietro Terme' },
     ],
     hasMap: 'https://maps.google.com/?q=Via+Montanara+13g+Casalfiumanese',
+    sameAs: [],
   }
 
   return (

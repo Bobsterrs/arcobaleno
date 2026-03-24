@@ -9,7 +9,9 @@ import { FaqJsonLd } from '@/components/seo/FaqJsonLd'
 export const metadata: Metadata = {
   title: 'FAQ Celiachia e Buono ASL Emilia Romagna',
   description: 'Tutto sulla celiachia, il buono ASL Emilia Romagna e come fare la spesa senza glutine a Imola. 20 risposte dal negozio specializzato di Casalfiumanese.',
-  alternates: { canonical: 'https://www.arcobalenosenzaglutine.it/faq' },
+  alternates: {
+    canonical: 'https://www.arcobalenosenzaglutine.it/faq',
+  },
 }
 
 const faqs = [

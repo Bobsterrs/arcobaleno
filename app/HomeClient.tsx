@@ -56,7 +56,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full object-cover"
               poster="/img/hero-poster.jpg"
             >
-              <source src="/20260315_2101_New Video_simple_compose_01kkshdkphfmxsyy391c49ddsh.mp4" type="video/mp4" />
+              <source src="/hero2.mp4" type="video/mp4" />
               {/* Fallback pattern if video fails */}
               <div className="absolute inset-0 bg-emerald-900 opacity-40"></div>
             </video>
@@ -535,7 +535,7 @@ export default function Home() {
                   Senza Glutine, <br />con tutto il gusto.
                 </h2>
                 <p className="text-emerald-100/80 font-light leading-relaxed text-lg mb-8">
-                  Entra a far parte della nostra community e scopri oltre 30 ricette testate e approvate: antipasti, primi piatti, secondi, contorni, dolci e tanto altro. Piatti semplici, genuini e buonissimi pensati da chi vive il senza glutine ogni giorno.
+                  Unisciti alla nostra community senza glutine: uno spazio di condivisione autentica per chi vive la celiachia ogni giorno. Scopri e proponi le tue ricette inclusive, nate dalla nostra esperienza diretta per condividere il piacere della tavola, dai primi piatti ai dolci artigianali. Insieme, trasformiamo il senza glutine in una passione comune.
                 </p>
                 <a
                   href="/ricette"
