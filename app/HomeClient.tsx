@@ -209,69 +209,60 @@ export default function Home() {
         </section>
 
         {/* 3. Why Us (vs Competitor) */}
-        <section className="relative md:sticky top-0 z-40 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-emerald-900 text-white overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
-
-          <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-800 rounded-full blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2"></div>
-          <div className="absolute bottom-0 left-0 w-80 h-80 bg-amber-900 rounded-full blur-3xl opacity-20 -translate-x-1/2 translate-y-1/2"></div>
-
+        <section className="relative md:sticky top-0 z-40 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
           <div className="container mx-auto px-4 md:px-6 relative z-10 py-24 md:py-20">
-            <motion.div {...fadeIn} className="mb-16 md:flex md:justify-between md:items-end">
-              <div className="max-w-2xl">
-                <h2 className="font-serif text-4xl md:text-5xl font-bold mb-6">Perché Arcobaleno?</h2>
-                <p className="text-xl text-emerald-100/90 font-light">
-                  Non siamo un semplice negozio. Siamo ricercatori della qualità.
-                  Ecco cosa ci rende diversi.
-                </p>
-              </div>
+            <motion.div {...fadeIn} className="text-center mb-16 max-w-3xl mx-auto">
+              <span className="text-emerald-600 font-semibold tracking-wider text-sm uppercase mb-4 block">Perché Sceglierci</span>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">L'Eccellenza dell'Arcobaleno</h2>
+              <p className="text-xl text-gray-600 font-light leading-relaxed">
+                Non siamo un semplice negozio. Siamo ricercatori della qualità.
+                Abbiamo scelto di fare del senza glutine una passione, prima che un lavoro.
+              </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 {
                   title: "Selezione Rigorosa",
                   desc: "Assaggiamo personalmente ogni singolo prodotto prima di metterlo a scaffale. Se non piace a noi, non lo vendiamo.",
-                  icon: <ShieldCheck className="w-6 h-6 text-emerald-300" />
+                  icon: <ShieldCheck className="w-8 h-8 text-emerald-600" />
                 },
                 {
                   title: "Novità Fresche",
-                  desc: "Il mondo del senza glutine si evolve velocemente. Aggiorniamo costantemente il nostro catalogo con le ultime release dei migliori produttori artigianali e non.",
-                  icon: <Star className="w-6 h-6 text-emerald-300" />
+                  desc: "Il mondo del senza glutine si evolve velocemente. Aggiorniamo costantemente il nostro catalogo con le ultime release.",
+                  icon: <Star className="w-8 h-8 text-amber-500" />
                 },
                 {
                   title: "Competenza Tecnica",
-                  desc: "Conosciamo le differenze tra amidi, mix pronti e farine in purezza. Ti sappiamo consigliare esattamente l'ingrediente per la tua ricetta.",
-                  icon: <CheckCircle2 className="w-6 h-6 text-emerald-300" />
+                  desc: "Conosciamo le differenze tra amidi e farine in purezza. Ti sappiamo consigliare esattamente l'ingrediente per te.",
+                  icon: <CheckCircle2 className="w-8 h-8 text-emerald-600" />
                 },
                 {
-                  title: "Reperibilità Garantita",
-                  desc: "Hai trovato il pane perfetto? Noi cerchiamo di garantirti scorte costanti dei tuoi prodotti preferiti.",
-                  icon: <ShoppingBag className="w-6 h-6 text-emerald-300" />
+                  title: "Reperibilità",
+                  desc: "Hai trovato il pane perfetto? Cerchiamo di garantirti scorte costanti dei tuoi prodotti preferiti.",
+                  icon: <ShoppingBag className="w-8 h-8 text-amber-500" />
                 }
               ].map((card, i) => (
                 <motion.div
                   key={i}
-                  initial={{ opacity: 0, x: i % 2 === 0 ? -20 : 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="bg-emerald-800/40 border border-emerald-700/50 backdrop-blur-sm p-8 rounded-2xl hover:bg-emerald-800/60 transition-all hover:-translate-y-1 duration-300"
+                  className="bg-gray-50 rounded-[2rem] p-8 text-center hover:bg-emerald-50 border border-transparent hover:border-emerald-100 transition-all hover:shadow-xl duration-300 group"
                 >
-                  <div className="flex items-start mb-4">
-                    <div className="bg-emerald-700/50 p-3 rounded-full mr-4">
-                      {card.icon}
-                    </div>
-                    <div>
-                      <h3 className="font-serif text-2xl font-bold mb-2">{card.title}</h3>
-                      <p className="text-emerald-100/80 font-light leading-relaxed">{card.desc}</p>
-                    </div>
+                  <div className="mx-auto bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm mb-6 group-hover:scale-110 transition-transform">
+                    {card.icon}
                   </div>
+                  <h3 className="font-serif text-xl font-bold mb-3 text-foreground">{card.title}</h3>
+                  <p className="text-gray-600 font-light leading-relaxed text-sm">{card.desc}</p>
                 </motion.div>
               ))}
             </div>
             <div className="mt-12 text-center">
               <Link href="/metodo-arcobaleno">
-                <Button variant="outline" className="border-emerald-400 text-emerald-300 hover:bg-emerald-800 rounded-full px-8">
-                  Scopri il Metodo Arcobaleno <ArrowRight className="ml-2 w-4 h-4" />
+                <Button variant="outline" className="border-emerald-200 text-emerald-600 hover:bg-emerald-50 rounded-full px-8">
+                  Dettagli Metodo Arcobaleno <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
             </div>

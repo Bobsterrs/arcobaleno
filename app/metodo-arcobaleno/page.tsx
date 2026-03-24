@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
-import { Heart, Search, Star } from 'lucide-react'
+import { Heart, Search, Star, ShieldCheck, CheckCircle2, ShoppingBag } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Il Metodo Arcobaleno: Eccellenza Senza Glutine',
@@ -34,29 +34,68 @@ export default function MetodoPage() {
         </section>
 
         <section className="container mx-auto px-4 md:px-6 py-12">
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
-              <div className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:shadow-lg transition-all duration-300">
-                <div className="mx-auto bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm mb-6 text-amber-500">
-                  <Heart size={32} />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto mb-20">
+              <div className="bg-gray-50 rounded-[2rem] p-10 text-center border border-transparent hover:border-emerald-100 hover:bg-emerald-50 hover:shadow-xl transition-all duration-300 group">
+                <div className="mx-auto bg-white w-20 h-20 rounded-full flex items-center justify-center shadow-sm mb-8 text-amber-500 group-hover:scale-110 transition-transform">
+                  <Heart size={40} />
                 </div>
-                <h3 className="font-serif text-xl font-bold mb-3 text-foreground">Empatia e Ascolto</h3>
-                <p className="text-gray-600 font-light leading-relaxed">Ogni diagnosi è diversa. Ti accompagniamo passo passo nella tua nuova dieta, condividendo la nostra esperienza.</p>
+                <h3 className="font-serif text-2xl font-bold mb-4 text-foreground">Empatia e Ascolto</h3>
+                <p className="text-gray-600 font-light leading-relaxed">Ogni diagnosi è diversa. Ti accompagniamo passo passo nella tua nuova dieta, basandoci sulla nostra esperienza diretta.</p>
               </div>
-              <div className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:shadow-lg transition-all duration-300">
-                <div className="mx-auto bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm mb-6 text-emerald-500">
-                  <Search size={32} />
+              <div className="bg-gray-50 rounded-[2rem] p-10 text-center border border-transparent hover:border-emerald-100 hover:bg-emerald-50 hover:shadow-xl transition-all duration-300 group">
+                <div className="mx-auto bg-white w-20 h-20 rounded-full flex items-center justify-center shadow-sm mb-8 text-emerald-500 group-hover:scale-110 transition-transform">
+                  <Search size={40} />
                 </div>
-                <h3 className="font-serif text-xl font-bold mb-3 text-foreground">Il Prodotto Perfetto</h3>
-                <p className="text-gray-600 font-light leading-relaxed">Cerchi un sapore che ti manca? Se un prodotto non c'è, attiviamo la nostra rete per trovarlo per te.</p>
+                <h3 className="font-serif text-2xl font-bold mb-4 text-foreground">Il Prodotto Perfetto</h3>
+                <p className="text-gray-600 font-light leading-relaxed">Cerchi un sapore che ti manca? Se un prodotto non c'è nel nostro catalogo, lo troviamo per te attivando i nostri migliori canali.</p>
               </div>
-              <div className="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100 hover:shadow-lg transition-all duration-300">
-                <div className="mx-auto bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm mb-6 text-amber-500">
-                  <Star size={32} />
+              <div className="bg-gray-50 rounded-[2rem] p-10 text-center border border-transparent hover:border-emerald-100 hover:bg-emerald-50 hover:shadow-xl transition-all duration-300 group">
+                <div className="mx-auto bg-white w-20 h-20 rounded-full flex items-center justify-center shadow-sm mb-8 text-amber-500 group-hover:scale-110 transition-transform">
+                  <Star size={40} />
                 </div>
-                <h3 className="font-serif text-xl font-bold mb-3 text-foreground">Eccellenza del Gusto</h3>
-                <p className="text-gray-600 font-light leading-relaxed">Assaggiamo personalmente tutto. Selezioniamo solo ciò che supera i nostri standard di sapore e qualità.</p>
+                <h3 className="font-serif text-2xl font-bold mb-4 text-foreground">Eccellenza del Gusto</h3>
+                <p className="text-gray-600 font-light leading-relaxed">Assaggiamo personalmente ogni singolo prodotto. Selezioniamo solo ciò che supera i nostri standard di sapore e qualità artigianale.</p>
               </div>
-           </div>
+            </div>
+
+            <div className="py-20 border-t border-gray-100">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-center mb-16">I Pilastri di Arcobaleno</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                {[
+                  {
+                    title: "Selezione Rigorosa",
+                    desc: "Scegliamo solo brand certificati e prodotti che garantiscono la massima sicurezza.",
+                    icon: <ShieldCheck className="w-8 h-8 text-emerald-600" />
+                  },
+                  {
+                    title: "Novità Fresche",
+                    desc: "Aggiorniamo costantemente il nostro catalogo con le ultime release dei migliori produttori.",
+                    icon: <Star className="w-8 h-8 text-amber-500" />
+                  },
+                  {
+                    title: "Competenza",
+                    desc: "Conosciamo le differenze tra amidi e farine in purezza per consigliarti al meglio.",
+                    icon: <CheckCircle2 className="w-8 h-8 text-emerald-600" />
+                  },
+                  {
+                    title: "Reperibilità",
+                    desc: "Cerchiamo di garantirti scorte costanti dei tuoi prodotti preferiti senza interruzioni.",
+                    icon: <ShoppingBag className="w-8 h-8 text-amber-500" />
+                  }
+                ].map((card, i) => (
+                  <div
+                    key={i}
+                    className="bg-gray-50 rounded-3xl p-8 text-center hover:bg-emerald-50 border border-transparent hover:shadow-md transition-all duration-300"
+                  >
+                    <div className="mx-auto bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-sm mb-6">
+                      {card.icon}
+                    </div>
+                    <h4 className="font-serif text-lg font-bold mb-2 text-foreground">{card.title}</h4>
+                    <p className="text-gray-600 font-light leading-relaxed text-sm">{card.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
         </section>
       </main>
 
