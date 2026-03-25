@@ -209,7 +209,7 @@ export default function Home() {
         </section>
 
         {/* 3. Why Us (vs Competitor) */}
-        <section className="relative md:sticky top-0 z-40 min-h-screen w-full flex flex-col justify-center bg-emerald-50 overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.05)] pt-32 pb-20">
+        <section id="perche-noi" className="relative md:sticky top-0 z-40 min-h-screen w-full flex flex-col justify-center bg-emerald-50 overflow-hidden shadow-[0_-10px_40px_rgba(0,0,0,0.05)] pt-32 pb-20">
           <div className="container mx-auto px-4 md:px-6 relative z-10 py-24 md:py-20">
             <motion.div {...fadeIn} className="text-center mb-16 max-w-3xl mx-auto">
               <span className="text-emerald-600 font-semibold tracking-wider text-sm uppercase mb-4 block">Perché Sceglierci</span>
@@ -270,7 +270,7 @@ export default function Home() {
         </section>
 
         {/* 3. Dicono di Noi (Reviews Carousel) */}
-        <section className="relative md:sticky top-0 z-50 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
+        <section id="recensioni" className="relative md:sticky top-0 z-50 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-white shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
           <div className="container mx-auto px-4 md:px-6 py-24 md:py-20">
             <motion.div {...fadeIn} className="text-center mb-16">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-4">Dicono di noi</h2>
@@ -443,7 +443,7 @@ export default function Home() {
         </section>
 
         {/* 2.5. Calcolatore Buono */}
-        <section className="relative md:sticky top-0 z-70 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-amber-50 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
+        <section id="calcolatore" className="relative md:sticky top-0 z-70 h-auto md:h-[100dvh] w-full flex flex-col justify-center bg-amber-50 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
 
           <div className="container mx-auto px-4 md:px-6 py-24 md:py-20">
             <div className="max-w-4xl mx-auto flex flex-col items-center gap-12">
