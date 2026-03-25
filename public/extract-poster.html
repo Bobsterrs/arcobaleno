@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title>Extract Poster</title>
+<style>
+  body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; }
+  canvas { max-width: 100%; display: block; }
+  #status { color: white; font-family: monospace; position: fixed; top: 10px; left: 10px; z-index: 10; }
+</style>
+</head>
+<body>
+<div id="status">Loading video...</div>
+<canvas id="canvas"></canvas>
+<video id="video" src="/videomais.mp4" crossOrigin="anonymous" preload="auto" muted style="display:none"></video>
+<script>
+  const video = document.getElementById('video');
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  const status = document.getElementById('status');
+
+  video.addEventListener('loadeddata', () => {
+    video.currentTime = 0.01;
+  });
+
+  video.addEventListener('seeked', () => {
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    const dataURL = canvas.toDataURL('image/jpeg', 0.92);
+    window.__posterDataURL = dataURL;
+    status.textContent = 'READY: ' + canvas.width + 'x' + canvas.height;
+    status.style.background = 'green';
+    status.style.padding = '4px 8px';
+  });
+
+  video.addEventListener('error', (e) => {
+    status.textContent = 'ERROR: ' + (e.message || 'video load failed');
+    status.style.background = 'red';
+  });
+
+  video.load();
+</script>
+</body>
+</html>

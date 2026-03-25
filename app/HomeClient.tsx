@@ -55,9 +55,9 @@ export default function Home() {
               playsInline
               preload="none"
               className="absolute inset-0 w-full h-full object-cover"
-              poster="/img/hero-poster.jpg"
+              poster="/img/videomais-poster.jpg"
             >
-              <source src="/hero2.mp4" type="video/mp4" />
+              <source src="/videomais.mp4" type="video/mp4" />
               {/* Fallback pattern if video fails */}
               <div className="absolute inset-0 bg-emerald-900 opacity-40"></div>
             </video>
@@ -73,8 +73,9 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-serif text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
             >
-              In Vallata c'è <br />
-              <span className="text-amber-400 text-shadow-glow">l'Arcobaleno</span> tutti i giorni
+              A Casalfiumanese<br />
+              <span className="text-amber-400 text-shadow-glow">Arcobaleno Senza Glutine</span><br />
+              splende tutti i giorni
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, scale: 0.95 }}
