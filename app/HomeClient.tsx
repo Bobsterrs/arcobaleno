@@ -4,10 +4,11 @@ import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import Link from "next/link"
 import { Button } from "@/components/ui/Button"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
 import { Heart, Search, ShieldCheck, Star, ArrowRight, CheckCircle2, ShoppingBag, Instagram, Calculator, Phone, MapPin, Clock, MessageCircle, HelpCircle } from "lucide-react"
 import Image from "next/image"
 import { VoucherCalculator } from "@/components/VoucherCalculator"
+import React, { useRef, useState } from "react"
 
 const brands = [
   { name: "Belli Freschi", logo: "/logocarousel/bellifreschi.png" },
@@ -30,6 +31,53 @@ const brands = [
   { name: "Sarchio", logo: "/logocarousel/sarchio.png" },
   { name: "Schar", logo: "/logocarousel/schar.jpg" },
 ]
+
+function ParallaxCard({ children, index, delay = 0, className = "" }: { children: React.ReactNode, index: number, delay?: number, className?: string }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [rotateX, setRotateX] = useState(0)
+  const [rotateY, setRotateY] = useState(0)
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!ref.current) return
+    const rect = ref.current.getBoundingClientRect()
+    const width = rect.width
+    const height = rect.height
+    const mouseX = e.clientX - rect.left
+    const mouseY = e.clientY - rect.top
+    const xPct = mouseX / width - 0.5
+    const yPct = mouseY / height - 0.5
+    setRotateX(yPct * -15) 
+    setRotateY(xPct * 15)
+  }
+
+  const handleMouseLeave = () => {
+    setRotateX(0)
+    setRotateY(0)
+  }
+
+  return (
+    <motion.div
+      ref={ref}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.7, delay: delay + (index * 0.15) }}
+      style={{ perspective: 1000 }}
+      className="w-full h-full"
+    >
+      <motion.div
+        animate={{ rotateX, rotateY }}
+        transition={{ type: "spring", stiffness: 400, damping: 30 }}
+        style={{ transformStyle: "preserve-3d" }}
+        className={`w-full h-full rounded-[2rem] p-8 text-center transition-all duration-300 flex flex-col items-center justify-center group ${className}`}
+      >
+        {children}
+      </motion.div>
+    </motion.div>
+  )
+}
 
 export default function Home() {
   const fadeIn = {
@@ -190,20 +238,21 @@ export default function Home() {
                   initial: { opacity: 0, x: 50 }
                 }
               ].map((feature, i) => (
-                <motion.div
+                <ParallaxCard
                   key={i}
-                  initial={feature.initial}
-                  whileInView={{ opacity: 1, x: 0, y: 0 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  transition={{ duration: 0.7, delay: i * 0.3 }}
-                  className="bg-gray-50 rounded-2xl p-8 text-center hover:bg-emerald-50 border border-transparent hover:border-emerald-100 transition-all hover:scale-105 duration-300 shadow-sm aspect-square flex flex-col items-center justify-center"
+                  index={i}
+                  delay={0.2}
+                  className="bg-white hover:bg-emerald-50 border border-gray-100 shadow-xl hover:shadow-2xl hover:border-emerald-200"
                 >
-                  <div className="mx-auto bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm mb-6">
+                  <div 
+                    style={{ transform: "translateZ(40px)" }}
+                    className="mx-auto bg-emerald-50 w-20 h-20 rounded-full flex items-center justify-center shadow-lg mb-8 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300"
+                  >
                     {feature.icon}
                   </div>
-                  <h3 className="font-serif text-xl font-bold mb-3">{feature.title}</h3>
-                  <p className="text-gray-600 font-light leading-relaxed">{feature.desc}</p>
-                </motion.div>
+                  <h3 style={{ transform: "translateZ(25px)" }} className="font-serif text-2xl font-bold mb-4">{feature.title}</h3>
+                  <p style={{ transform: "translateZ(15px)" }} className="text-gray-600 px-2 font-light leading-relaxed text-lg">{feature.desc}</p>
+                </ParallaxCard>
               ))}
             </div>
           </div>
@@ -244,20 +293,21 @@ export default function Home() {
                   icon: <ShoppingBag className="w-8 h-8 text-amber-500" />
                 }
               ].map((card, i) => (
-                <motion.div
+                <ParallaxCard
                   key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: i * 0.1 }}
-                  className="bg-gray-50 rounded-2xl p-8 text-center hover:bg-emerald-50 border border-transparent hover:border-emerald-100 transition-all hover:scale-105 duration-300 shadow-sm aspect-square flex flex-col items-center justify-center group"
+                  index={i}
+                  delay={0.1}
+                  className="bg-white hover:bg-amber-50/50 border border-gray-100 shadow-xl hover:shadow-2xl hover:border-amber-200"
                 >
-                  <div className="mx-auto bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm mb-6 group-hover:scale-110 transition-transform">
+                  <div 
+                    style={{ transform: "translateZ(40px)" }}
+                    className="mx-auto bg-amber-50 w-20 h-20 rounded-full flex items-center justify-center shadow-lg mb-8 group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300"
+                  >
                     {card.icon}
                   </div>
-                  <h3 className="font-serif text-xl font-bold mb-3 text-foreground">{card.title}</h3>
-                  <p className="text-gray-600 font-light leading-relaxed">{card.desc}</p>
-                </motion.div>
+                  <h3 style={{ transform: "translateZ(25px)" }} className="font-serif text-xl font-bold mb-3 text-foreground">{card.title}</h3>
+                  <p style={{ transform: "translateZ(15px)" }} className="text-gray-600 font-light leading-relaxed">{card.desc}</p>
+                </ParallaxCard>
               ))}
             </div>
             <div className="mt-12 text-center">
@@ -292,12 +342,12 @@ export default function Home() {
                 className="flex whitespace-nowrap gap-8 items-center w-max px-4"
                 animate={{ x: ["0%", "-50%"] }}
                 transition={{
-                  duration: 60,
+                  duration: 80,
                   repeat: Infinity,
                   ease: "linear"
                 }}
               >
-                {/* Double the reviews for seamless loop */}
+                {/* Double the 6 reviews for seamless loop */}
                 {[...[
                   {
                     name: "Marco L.",
@@ -313,6 +363,21 @@ export default function Home() {
                     name: "Roberto F.",
                     text: "Il proprietario è preparatissimo e sa consigliarti al meglio sui mix di farine. Consigliatissimo per chi ha appena ricevuto la diagnosi.",
                     date: "2 mesi fa"
+                  },
+                  {
+                    name: "Giulia P.",
+                    text: "Miglior negozio senza glutine della zona. I prodotti freschi sono incredibili, sembra di mangiare prodotti normali!",
+                    date: "2 settimane fa"
+                  },
+                  {
+                    name: "Simona T.",
+                    text: "Un paradiso per noi celiaci. Ho trovato marche artigianali che non avevo mai visto prima. Tornerò sicuramente!",
+                    date: "1 mese fa"
+                  },
+                  {
+                    name: "Andrea M.",
+                    text: "Servizio impeccabile e grande attenzione al cliente. Sapere che posso fidarmi al 100% mi permette di fare la spesa senza pensieri.",
+                    date: "3 mesi fa"
                   }
                 ], ...[
                   {
@@ -329,6 +394,21 @@ export default function Home() {
                     name: "Roberto F.",
                     text: "Il proprietario è preparatissimo e sa consigliarti al meglio sui mix di farine. Consigliatissimo per chi ha appena ricevuto la diagnosi.",
                     date: "2 mesi fa"
+                  },
+                  {
+                    name: "Giulia P.",
+                    text: "Miglior negozio senza glutine della zona. I prodotti freschi sono incredibili, sembra di mangiare prodotti normali!",
+                    date: "2 settimane fa"
+                  },
+                  {
+                    name: "Simona T.",
+                    text: "Un paradiso per noi celiaci. Ho trovato marche artigianali che non avevo mai visto prima. Tornerò sicuramente!",
+                    date: "1 mese fa"
+                  },
+                  {
+                    name: "Andrea M.",
+                    text: "Servizio impeccabile e grande attenzione al cliente. Sapere che posso fidarmi al 100% mi permette di fare la spesa senza pensieri.",
+                    date: "3 mesi fa"
                   }
                 ]].map((review, i) => (
                   <div

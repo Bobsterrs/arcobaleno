@@ -63,6 +63,56 @@ export default function ChiSiamoPage() {
             </div>
           </div>
         </section>
+
+        {/* Nuova Sezione: Come Nasce il Nostro Negozio */}
+        <section className="bg-gray-50 py-16 md:py-24 border-y border-gray-100">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-16">
+              <div className="md:w-1/2">
+                <div className="aspect-[4/5] rounded-3xl overflow-hidden relative shadow-2xl">
+                  <Image
+                    src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=800&auto=format&fit=crop"
+                    alt="Placeholder storia negozio"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div className="md:w-1/2 space-y-6 text-lg text-gray-600 font-light leading-relaxed">
+                <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Come Nasce il Nostro Negozio</h2>
+                <p>
+                  [TESTO DA SOSTITUIRE: Inserisci qui il racconto di come e quando avete deciso di aprire fisicamente il negozio a Casalfiumanese. Puoi parlare delle difficoltà iniziali, del supporto della comunità locale o del ricordo del primo giorno di apertura.]
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Nuova Sezione: Street Food */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+              <div className="md:w-1/2">
+                <div className="aspect-[4/5] rounded-3xl overflow-hidden relative shadow-2xl">
+                  <Image
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop"
+                    alt="Placeholder street food senza glutine"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div className="md:w-1/2 space-y-6 text-lg text-gray-600 font-light leading-relaxed">
+                <h2 className="font-serif text-3xl font-bold text-foreground mb-4">Street Food Senza Glutine</h2>
+                <p>
+                  [TESTO DA SOSTITUIRE: Descrivi qui il nuovo angolo/servizio dedicato allo street food gluten-free. Menziona quali sfiziosità offrite "da passeggio" (fritti, panini speciali, focacce) e perché avete voluto portare lo street food nel mondo della celiachia.]
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />

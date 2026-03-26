@@ -35,18 +35,19 @@ export function Navbar() {
     { label: "Il Metodo", href: "/metodo-arcobaleno" },
     { label: "Prodotti", href: "/prodotti-senza-glutine" },
     { label: "Ricette", href: "/ricette" },
+    { label: "Buono Celiachia", href: "/buono-celiachia-emilia-romagna" },
     { label: "FAQ", href: "/faq" },
     { label: "Dove Trovarci", href: "/dove-trovarci" }
   ];
 
-  const linkClass = "px-3 py-1.5 rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center"
+  const linkClass = "px-3 py-1.5 whitespace-nowrap rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center"
   const mobileLinkClass = "w-full text-foreground text-lg py-4 border-b border-gray-50 text-center font-medium hover:text-emerald-600 hover:bg-emerald-50/50 transition-all flex justify-center items-center rounded-2xl"
 
   return (
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-4 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-[95%] max-w-6xl z-[100] transition-all duration-300 rounded-full border ${
+      className={`fixed top-4 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-[95%] max-w-7xl z-[100] transition-all duration-300 rounded-full border ${
         isScrolled 
           ? "bg-white/90 backdrop-blur-md shadow-lg border-gray-200 py-3 px-6" 
           : "bg-white/60 backdrop-blur-md border-white/20 py-4 px-6 shadow-sm"
@@ -63,7 +64,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden lg:flex items-center justify-center space-x-2 flex-1 px-2">
+        <nav className="hidden xl:flex items-center justify-evenly flex-1 px-8 mx-4">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className={linkClass}>
               {item.label}
