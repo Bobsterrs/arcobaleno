@@ -38,8 +38,9 @@ export async function POST(request: Request) {
 
     if (!apiKey) {
       console.error('CRITICAL: MAILERLITE_API_KEY is still not defined');
+      const now = new Date().toLocaleTimeString();
       return NextResponse.json(
-        { error: 'Internal server error', details: 'API configuration missing' },
+        { error: 'Internal server error', details: `API configuration missing [debug: ${now}]` },
         { status: 500 }
       );
     }
