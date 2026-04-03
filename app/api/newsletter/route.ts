@@ -14,14 +14,30 @@ export async function POST(request: Request) {
       );
     }
 
-    const apiKey = process.env.MAILERLITE_API_KEY || 'TEMP_TEST_KEY';
+    // Robust environment variable loading
+    let apiKey = process.env.MAILERLITE_API_KEY;
 
-    if (apiKey === 'TEMP_TEST_KEY' && !process.env.MAILERLITE_API_KEY) {
-      console.warn('WARNING: Using TEMP_TEST_KEY because process.env.MAILERLITE_API_KEY is missing');
+    // Fallback: manually read from .env.local if not loaded by Next.js
+    if (!apiKey) {
+      try {
+        const fs = require('fs');
+        const path = require('path');
+        const envPath = path.resolve(process.cwd(), '.env.local');
+        if (fs.existsSync(envPath)) {
+          const envContent = fs.readFileSync(envPath, 'utf8');
+          const match = envContent.match(/MAILERLITE_API_KEY=(.*)/);
+          if (match && match[1]) {
+            apiKey = match[1].trim();
+            console.log('Successfully loaded MAILERLITE_API_KEY from .env.local fallback');
+          }
+        }
+      } catch (err) {
+        console.error('Failed to read .env.local fallback:', err);
+      }
     }
 
     if (!apiKey) {
-      console.error('CRITICAL: MAILERLITE_API_KEY is not defined in process.env');
+      console.error('CRITICAL: MAILERLITE_API_KEY is still not defined');
       return NextResponse.json(
         { error: 'Internal server error', details: 'API configuration missing' },
         { status: 500 }
