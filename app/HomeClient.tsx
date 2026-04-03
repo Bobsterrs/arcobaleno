@@ -725,7 +725,10 @@ function NewsletterForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email }),
+        body: JSON.stringify({ 
+          name: (name || '').trim(), 
+          email: (email || '').trim() 
+        }),
       })
 
       const data = await response.json()
@@ -737,11 +740,13 @@ function NewsletterForm() {
         setEmail('')
       } else {
         setStatus('error')
-        setMessage(data.error || 'Qualcosa è andato storto. Riprova più tardi.')
+        const errorMsg = data.error || 'Qualcosa è andato storto.'
+        const errorDetail = data.details?.message || (typeof data.details === 'string' ? data.details : '')
+        setMessage(errorDetail ? `${errorMsg}: ${errorDetail}` : errorMsg)
       }
-    } catch (error) {
+    } catch (error: any) {
       setStatus('error')
-      setMessage('Errore di connessione. Riprova più tardi.')
+      setMessage(`Errore di connessione: ${error.message}`)
     }
   }
 

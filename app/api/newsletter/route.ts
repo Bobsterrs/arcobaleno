@@ -2,7 +2,10 @@ import { NextResponse } from 'next/server';
 
 export async function POST(request: Request) {
   try {
-    const { email, name } = await request.json();
+    const body = await request.json();
+    const { email, name } = body;
+    
+    console.log('Newsletter Form Data Received:', { email, name });
 
     if (!email) {
       return NextResponse.json(
@@ -14,16 +17,16 @@ export async function POST(request: Request) {
     const apiKey = process.env.MAILERLITE_API_KEY;
 
     if (!apiKey) {
-      console.error('MAILERLITE_API_KEY is not defined');
+      console.error('CRITICAL: MAILERLITE_API_KEY is not defined in process.env');
       return NextResponse.json(
-        { error: 'Internal server error' },
+        { error: 'Internal server error', details: 'API configuration missing' },
         { status: 500 }
       );
     }
 
     // MailerLite API v2 (new)
     // https://developers.mailerlite.com/docs/subscribers.html#create-upsert-subscriber
-    console.log('Subscribing email:', email, 'to MailerLite');
+    console.log('Attempting to subscribe:', email, 'to Group 183714267474691628');
     
     const response = await fetch('https://connect.mailerlite.com/api/subscribers', {
       method: 'POST',
@@ -33,11 +36,11 @@ export async function POST(request: Request) {
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        email,
+        email: email.trim(),
         fields: {
-          name: name || '',
+          name: name ? name.trim() : '',
         },
-        groups: ['183714267474691628'], // Updated to 'Clienti' group ID
+        groups: ['183714267474691628'], // Clienti group
         status: 'active',
       }),
     });
@@ -57,8 +60,8 @@ export async function POST(request: Request) {
         data: responseData
       });
       return NextResponse.json(
-        { error: 'Failed to subscribe', details: responseData },
-        { status: response.status }
+        { error: 'MailerLite API Error', details: responseData },
+        { status: 422 } // Usually validation issues
       );
     }
 
@@ -68,7 +71,7 @@ export async function POST(request: Request) {
       { status: 200 }
     );
   } catch (error: any) {
-    console.error('Newsletter API Exception:', error.message);
+    console.error('Newsletter API Exception:', error);
     return NextResponse.json(
       { error: 'Internal server error', details: error.message },
       { status: 500 }
