@@ -43,6 +43,17 @@ export function Navbar() {
   const linkClass = "px-3 py-1.5 whitespace-nowrap rounded-full text-foreground hover:text-emerald-600 hover:bg-emerald-50 font-medium transition-all cursor-pointer text-center"
   const mobileLinkClass = "w-full text-foreground text-lg py-4 border-b border-gray-50 text-center font-medium hover:text-emerald-600 hover:bg-emerald-50/50 transition-all flex justify-center items-center rounded-2xl"
 
+  const handleClubClick = (e: React.MouseEvent) => {
+    if (isHomePage) {
+      e.preventDefault()
+      const element = document.getElementById("newsletter")
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
+      setIsMobileMenuOpen(false)
+    }
+  }
+
   return (
     <motion.header
       initial={{ y: -100 }}
@@ -86,7 +97,7 @@ export function Navbar() {
             </a>
           </div>
           
-          <Link href="/#newsletter">
+          <Link href="/#newsletter" onClick={handleClubClick}>
             <Button 
               variant="secondary" 
               className="rounded-full shadow-md"
@@ -141,7 +152,7 @@ export function Navbar() {
                 </div>
 
                 <div className="pt-2">
-                  <Link href="/#newsletter" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Link href="/#newsletter" onClick={handleClubClick}>
                     <Button variant="secondary" className="w-full py-7 rounded-2xl shadow-lg text-lg">
                       Iscriviti al Club
                     </Button>
