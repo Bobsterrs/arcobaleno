@@ -16,22 +16,31 @@ export async function POST(request: Request) {
 
     // Robust environment variable loading
     let apiKey = process.env.MAILERLITE_API_KEY;
+    let debugInfo = 'env:process';
 
     // Fallback: manually read from .env.local if not loaded by Next.js
     if (!apiKey) {
+      const fs = require('fs');
+      const path = require('path');
+      const envPath = path.resolve('/Users/robertofalavigna/.gemini/antigravity/arcobaleno/', '.env.local');
+      debugInfo = `env:manual(${envPath})`;
       try {
-        const fs = require('fs');
-        const path = require('path');
-        const envPath = path.resolve(process.cwd(), '.env.local');
         if (fs.existsSync(envPath)) {
           const envContent = fs.readFileSync(envPath, 'utf8');
-          const match = envContent.match(/MAILERLITE_API_KEY=(.*)/);
+          // Use a better regex to handle long keys and potential quotes
+          const match = envContent.match(/MAILERLITE_API_KEY=["']?([^"'\s\n]+)["']?/);
           if (match && match[1]) {
             apiKey = match[1].trim();
-            console.log('Successfully loaded MAILERLITE_API_KEY from .env.local fallback');
+            console.log('Successfully loaded MAILERLITE_API_KEY from .env.local fallback (manual)');
+            debugInfo += ':found';
+          } else {
+            debugInfo += ':not_matched';
           }
+        } else {
+          debugInfo += ':not_exists';
         }
-      } catch (err) {
+      } catch (err: any) {
+        debugInfo += `:error(${err.message})`;
         console.error('Failed to read .env.local fallback:', err);
       }
     }
@@ -40,7 +49,7 @@ export async function POST(request: Request) {
       console.error('CRITICAL: MAILERLITE_API_KEY is still not defined');
       const now = new Date().toLocaleTimeString();
       return NextResponse.json(
-        { error: 'Internal server error', details: `API configuration missing [debug: ${now}]` },
+        { error: 'Internal server error', details: `API configuration missing [debug: ${now}] [info: ${debugInfo}]` },
         { status: 500 }
       );
     }
