@@ -720,7 +720,7 @@ function NewsletterForm() {
     setMessage('')
 
     try {
-      const response = await fetch('/api/newsletter', {
+      const response = await fetch('/api/club', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
