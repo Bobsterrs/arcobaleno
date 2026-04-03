@@ -14,7 +14,11 @@ export async function POST(request: Request) {
       );
     }
 
-    const apiKey = process.env.MAILERLITE_API_KEY;
+    const apiKey = process.env.MAILERLITE_API_KEY || 'TEMP_TEST_KEY';
+
+    if (apiKey === 'TEMP_TEST_KEY' && !process.env.MAILERLITE_API_KEY) {
+      console.warn('WARNING: Using TEMP_TEST_KEY because process.env.MAILERLITE_API_KEY is missing');
+    }
 
     if (!apiKey) {
       console.error('CRITICAL: MAILERLITE_API_KEY is not defined in process.env');

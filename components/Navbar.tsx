@@ -84,7 +84,7 @@ export function Navbar() {
         </nav>
 
         {/* Right Actions: Social Pills & CTA */}
-        <div className="hidden lg:flex items-center space-x-4 shrink-0">
+        <div className="hidden xl:flex items-center space-x-4 shrink-0">
           <div className="flex space-x-2">
             <a href="https://www.instagram.com/arcobalenosenzaglutine/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center hover:bg-emerald-100 transition-colors shadow-sm" title="Instagram">
               <Instagram size={18} />
@@ -109,7 +109,7 @@ export function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="lg:hidden p-2 text-foreground"
+          className="xl:hidden p-2 text-foreground"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -123,7 +123,7 @@ export function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="lg:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-xl rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 max-h-[80vh] flex flex-col"
+            className="xl:hidden absolute top-full left-0 right-0 mt-2 bg-white/95 backdrop-blur-xl rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100 max-h-[80vh] flex flex-col"
           >
             <div className="overflow-y-auto py-6 px-8 space-y-2 scrollbar-hide">
                 {navItems.map((item) => (
