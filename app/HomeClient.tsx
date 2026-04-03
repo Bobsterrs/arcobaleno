@@ -695,26 +695,8 @@ export default function Home() {
                   <span className="font-medium text-emerald-700">📌 Iscriviti ora: ti aspetta una sorpresa sul tuo primo acquisto in negozio!</span>
                 </p>
 
-                <form className="flex flex-col space-y-3" onSubmit={(e) => e.preventDefault()}>
-                  <input
-                    type="text"
-                    placeholder="Il tuo nome"
-                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
-                    required
-                  />
-                  <input
-                    type="email"
-                    placeholder="La tua email"
-                    className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"
-                    required
-                  />
-                  <Button type="submit" variant="primary" className="py-6 mt-2 shadow-lg hover:shadow-xl">
-                    Iscriviti e scopri il regalo
-                  </Button>
-                  <p className="text-xs text-center text-gray-400 mt-3">
-                    Rispettiamo la tua privacy. Niente spam, solo cose buone.
-                  </p>
-                </form>
+                {/* Newsletter Form */}
+                <NewsletterForm />
               </div>
             </motion.div>
           </div>
@@ -725,3 +707,102 @@ export default function Home() {
     </div>
   )
 }
+
+function NewsletterForm() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setStatus('loading')
+    setMessage('')
+
+    try {
+      const response = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email }),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setStatus('success')
+        setMessage('Grazie per esserti iscritto! Controlla la tua email per il regalo.')
+        setName('')
+        setEmail('')
+      } else {
+        setStatus('error')
+        setMessage(data.error || 'Qualcosa è andato storto. Riprova più tardi.')
+      }
+    } catch (error) {
+      setStatus('error')
+      setMessage('Errore di connessione. Riprova più tardi.')
+    }
+  }
+
+  if (status === 'success') {
+    return (
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="text-center p-6 bg-emerald-50 rounded-2xl border border-emerald-100"
+      >
+        <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
+        <h3 className="font-serif text-2xl font-bold text-emerald-900 mb-2">Benvenuto nel Club!</h3>
+        <p className="text-emerald-700 font-light">{message}</p>
+        <Button 
+          variant="outline" 
+          className="mt-6 border-emerald-200 text-emerald-700 hover:bg-emerald-100"
+          onClick={() => setStatus('idle')}
+        >
+          Torna al form
+        </Button>
+      </motion.div>
+    )
+  }
+
+  return (
+    <form className="flex flex-col space-y-3" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        placeholder="Il tuo nome"
+        className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white text-gray-800"
+        required
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        disabled={status === 'loading'}
+      />
+      <input
+        type="email"
+        placeholder="La tua email"
+        className="px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white text-gray-800"
+        required
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        disabled={status === 'loading'}
+      />
+      <Button 
+        type="submit" 
+        variant="primary" 
+        className="py-6 mt-2 shadow-lg hover:shadow-xl disabled:opacity-70"
+        disabled={status === 'loading'}
+      >
+        {status === 'loading' ? 'Iscrizione in corso...' : 'Iscriviti e scopri il regalo'}
+      </Button>
+      
+      {status === 'error' && (
+        <p className="text-sm text-red-500 text-center mt-2">{message}</p>
+      )}
+      
+      <p className="text-xs text-center text-gray-400 mt-3">
+        Rispettiamo la tua privacy. Niente spam, solo cose buone.
+      </p>
+    </form>
+  )
+}
+
